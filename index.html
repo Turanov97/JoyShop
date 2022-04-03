@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link class="flot--icon" rel="icon" href="./assets/images/logo.png" />
+
+    <title>JOY Consult Textile</title>
+    <!-- fontawosome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper slide -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <a href="#" class="header__logo">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+          <div class="header__title">С каждым днем все лучше и лучше!</div>
+          <div class="header__contact">
+            <div class="select-wrap">
+              <select
+                class="custom-select"
+                id="select"
+                name="select"
+                placeholder="rus"
+              >
+                <option value="option1">Uzb</option>
+                <option value="option2">eng</option>
+                <option value="option3">rus</option>
+              </select>
+            </div>
+            <a href="tel:+9989 (85) 558 88 56" class="header__phone">
+              +9989 (85) 558 88 56
+            </a>
+          </div>
+        </div>
+        <!-- header -->
+      </div>
+      <!--  container -->
+    </header>
+
+    <section class="section__intro">
+      <div class="container">
+        <div class="intro">
+          <div class="menu">
+            <a class="nav__toggle" id="nav__toggle" type="button">
+              <span class="nav__toggle-item">menu</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="#" class="link__item">Главная</a>
+            <a href="#" class="link__item">О нас</a>
+            <a href="#" class="link__item">НАши услуги</a>
+            <a href="#" class="link__item">Каталог-Прайс</a>
+            <a href="#" class="link__item">Отзывы</a>
+            <a href="#" class="link__item">Контакты</a>
+            <a href="#" class="link__item">Блог</a>
+          </div>
+          <div class="search">
+            <a class="search__send__btn" href="#">Оставить заявку</a>
+            <div class="search__icon">
+              <img src="./assets/images/icon/search.svg" alt="" />
+            </div>
+            <div class="search__box">
+              <img src="./assets/images/icon/fi_shopping-bag.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav__inner" id="nav__inner"></div>
+    </section>
+    <!-- slider -->
+
+    <section class="section__slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="inntro__inner">
+              <div class="intro__content">
+                <h1 class="intro__title">JOY Consult Textile</h1>
+                <div class="intro__text">
+                  Широкий спектр теКстильного
+                  <p>производства</p>
+                  в УзбеКистане
+                </div>
+                <div class="intro__btns">
+                  <a href="#" class="intro__btn">Позвонить</a>
+                  <a href="#" class="intro__btn">Новости</a>
+                </div>
+              </div>
+              <div class="intro__img">
+                <img src="./assets/images/intro/Frame 128.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="clinents__bg">
+        <img src="./assets/images/intro/clients-bg.png" alt="" />
+      </div>
+      <div class="clients__content">
+        <div class="clients__item">
+          <h1 class="clients__title">40+</h1>
+          <div class="clients__text">
+            Десятки Довольных Клиентов и Партнеров
+          </div>
+        </div>
+        <div class="clients__item">
+          <h1 class="clients__title">100+</h1>
+          <div class="clients__text">Сотни различной номенклатуры</div>
+        </div>
+        <div class="clients__item">
+          <h1 class="clients__title">1000+</h1>
+          <div class="clients__text">Тысячи произведённых единиц продукции</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+
+    <section>
+      <div class="container">
+        <div class="about">
+          <div class="about__content">
+            <div class="about__title">Наши услуги</div>
+            <img src="./assets/images/intro/about.png" alt="" />
+          </div>
+          <div class="accordion">
+            <div class="accordion__collapsible">
+              <div class="collapsible__header">
+                <p>Посредничество</p>
+              </div>
+              <div class="collapsible__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti optio voluptates rerum quibusdam sed maiores sint.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__collapsible">
+              <div class="collapsible__header">
+                <p>Посредничество</p>
+              </div>
+              <div class="collapsible__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti optio voluptates rerum quibusdam sed maiores sint.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti optio voluptates rerum quibusdam sed maiores sint.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__collapsible">
+              <div class="collapsible__header">
+                <p>продукция из JCT каталога</p>
+              </div>
+              <div class="collapsible__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti optio voluptates rerum quibusdam sed maiores sint.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+  
+ -->
+    <section class="container">
+      <div class="price">
+        <h1 class="price__title">Скачать Прайс-каталог</h1>
+        <div class="price__content">
+          <div class="price__btn">
+            <a href="#"> Скачать </a>
+          </div>
+          <div class="price__subtitle">
+            запросить в месенджерах:
+            <div class="price__sub">
+              <a href="#" class="price__text">
+                Telegram <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+              <a href="#" class="price__text">
+                WhatsApp <i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="photo">
+          <img
+            class="photo__bg"
+            src="./assets/images/intro/photo-blog.jpg"
+            alt=""
+          />
+          <img
+            class="photo__group"
+            src="./assets/images/intro/photo-group.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- popular -->
+
+    <section>
+      <div class="container">
+        <div class="popular">
+          <div class="popular__content">
+            <div class="popular__title">популярная продукция</div>
+            <div class="slider__btns">
+              <div class="my__slide__prev">
+                <img src="./assets/images/icon/prev.svg" alt="" />
+              </div>
+              <div class="my__slide__next">
+                <img src="./assets/images/icon/next.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide my__slide">
+                <div class="popular__item">
+                  <img
+                    src="./assets/images/popular/1.png"
+                    alt=""
+                    class="popular__img"
+                  />
+                  <div class="popular__subtitle">Верх SUNNY</div>
+                  <div class="popular__price">
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my__slide">
+                <div class="popular__item">
+                  <img
+                    src="./assets/images/popular/2.png"
+                    alt=""
+                    class="popular__img"
+                  />
+                  <div class="popular__subtitle">Верх SUNNY</div>
+                  <div class="popular__price">
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my__slide">
+                <div class="popular__item">
+                  <img
+                    src="./assets/images/popular/3.png"
+                    alt=""
+                    class="popular__img"
+                  />
+                  <div class="popular__subtitle">Верх SUNNY</div>
+                  <div class="popular__price">
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my__slide">
+                <div class="popular__item">
+                  <img
+                    src="./assets/images/popular/4.png"
+                    alt=""
+                    class="popular__img"
+                  />
+                  <div class="popular__subtitle">Верх SUNNY</div>
+                  <div class="popular__price">
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="property">
+      <div class="container">
+        <a href="#" class="property__box">получить комер. предл.</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="popular__content">
+          <div class="popular__title">Одежда</div>
+          <div class="slider__btns">
+            <div class="my__slide__prev slide__prev">
+              <img src="./assets/images/icon/prev.svg" alt="" />
+            </div>
+            <div class="my__slide__next slide__next">
+              <img src="./assets/images/icon/next.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="cloth">
+        <div class="cloth__content">
+          <div class="cloth__text">Текстиль для гостиниц и спа центров</div>
+          <div class="cloth__text">Корпоративная Униформа</div>
+          <div class="cloth__text">Корпоративная Униформа</div>
+          <div class="cloth__text">Брендированная промо продукция</div>
+          <div class="cloth__box">
+            <a href="#" class="property__box">Перейти в каталог</a>
+          </div>
+        </div>
+        <div class="cloth__slider">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide my__slide">
+                <div class="popular__item">
+                  <img
+                    src="./assets/images/popular/1.png"
+                    alt=""
+                    class="popular__img"
+                  />
+                  <div class="popular__subtitle">Верх SUNNY</div>
+                  <div class="popular__price">
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my__slide">
+                <div class="popular__item">
+                  <img
+                    src="./assets/images/popular/2.png"
+                    alt=""
+                    class="popular__img"
+                  />
+                  <div class="popular__subtitle">Верх SUNNY</div>
+                  <div class="popular__price">
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my__slide">
+                <div class="popular__item">
+                  <img
+                    src="./assets/images/popular/3.png"
+                    alt=""
+                    class="popular__img"
+                  />
+                  <div class="popular__subtitle">Верх SUNNY</div>
+                  <div class="popular__price">
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my__slide">
+                <div class="popular__item">
+                  <img
+                    src="./assets/images/popular/4.png"
+                    alt=""
+                    class="popular__img"
+                  />
+                  <div class="popular__subtitle">Верх SUNNY</div>
+                  <div class="popular__price">
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                    <div class="popular__count">
+                      За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="popular__content">
+          <div class="popular__title">отзывы</div>
+          <div class="slider__btns">
+            <div class="my__slide__prev slide__prev">
+              <img src="./assets/images/icon/prev.svg" alt="" />
+            </div>
+            <div class="my__slide__next slide__next">
+              <img src="./assets/images/icon/next.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="swiper mySwiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide my__slide">
+            <div class="reviews__content">
+              <div class="reviews__item">
+                <div class="reviews__text">
+                  Текстовый отзыв вряд ли может считаться объектом авторского
+                  права — творческой составляющей там мало, в основном описание
+                  процесса. Но если добавить к тексту фотографию, которую сделал
+                  кто-то другой, могут быть проблемы.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
