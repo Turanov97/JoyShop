@@ -90,7 +90,7 @@ var swiper = new Swiper(".mySwiper2", {
 
 var swiper = new Swiper(".mySwiper3", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  // spaceBetween: 30,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,

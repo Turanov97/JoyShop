@@ -962,7 +962,256 @@ reviews */
    margin-top: 150px;
 }
 
+.swiper-slide.reviews--slider {
+   width: 33.33333% !important;
+   margin-right: 0 !important;
+}
+
 .reviews__item {
-   padding: 20px;
+   padding: 30px 30px 0 30px;
    border: 1px solid #CADEDE;
+}
+
+.reviews__inner {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 25px;
+   align-items: center;
+}
+
+.reviews__text {
+   margin-bottom: 90px;
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 140%;
+   color: rgba(0, 0, 0, 0.73);
+}
+
+.reviews__star {
+   color: #FBE94C;
+}
+
+.reviews__name {
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 140%;
+   color: #2E7E7C;
+}
+
+/* contact */
+.contact {
+   display: flex;
+   justify-content: space-between;
+}
+
+.contact__content {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.contact__img {
+   width: 241px;
+   height: 282px;
+}
+
+.contact__form {
+   width: 55%;
+}
+
+.contact__form input {
+   padding: 26px 49px;
+   width: 100%;
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 140%;
+   color: rgba(0, 0, 0, 0.35);
+   background: #F4F7FB;
+   border-radius: 50px;
+   border: none;
+}
+
+.contact__form textarea {
+   width: 100%;
+   background: #F4F7FB;
+   border-radius: 40px;
+   border: none;
+   height: 130px;
+   padding: 21px 49px;
+}
+
+.contact__form button {
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 128.5%;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   background: #2E7E7C;
+   margin-top: 22px;
+   padding: 21px 66px;
+   border: none;
+   border-radius: 36px;
+}
+
+
+
+/* footer */
+
+.footer {
+   position: relative;
+   margin-top: 191px;
+   padding: 74px 0px 45px 0;
+   background: linear-gradient(106.44deg, #155553 12.26%, #358C8A 88.92%);
+}
+
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer__item {
+   width: 33.33333%;
+   display: flex;
+
+}
+
+.footer__blog {
+   display: flex;
+   flex-direction: column;
+   margin-left: 50PX;
+}
+
+.footer__blog:first-child {
+   margin-left: 0;
+}
+
+.footer__title {
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 128.5%;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-bottom: 13px;
+}
+
+.footer__text {
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 128.5%;
+   color: #FFFFFF;
+   margin-bottom: 12px;
+   transition: .2s ease-in;
+   cursor: pointer;
+}
+
+.footer__text:hover {
+   color: rgba(255, 255, 255, 0.45);
+}
+
+.footer__contact {
+   text-align: end;
+
+}
+
+.footer__logo {
+   margin: 0 auto;
+}
+
+.footer__phone {
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 128.5%;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.footer__mail {
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 128.5%;
+   color: #FFFFFF;
+   margin-top: 7px;
+}
+
+.footer__social {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   margin-top: 39px;
+   margin-bottom: 50px;
+}
+
+.footer__social__link {
+   display: inline;
+   width: 52px;
+   background: linear-gradient(0deg, #F4F7FB, #F4F7FB), radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
+   border-radius: 32.5px;
+   margin-left: 15px;
+   height: 52px;
+   position: relative;
+}
+
+.footer__social__link i {
+   color: #338986;
+   position: absolute;
+   top: 50%;
+   right: 50%;
+   transform: translate(50%, -50%);
+   font-size: 25px;
+}
+
+.footer__btn {
+   font-family: 'Inter';
+   padding: 18.5px 42.5px;
+   font-style: italic;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 128.5%;
+   /* or 19px */
+   text-transform: uppercase;
+   color: #145553;
+
+   background: #F4F7FB;
+   border: 1px solid #2E7E7C;
+   box-sizing: border-box;
+   border-radius: 31px;
+}
+
+.footer__end {
+   text-align: center;
+
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 128.5%;
+   /* or 19px */
+
+   text-transform: uppercase;
+
+   color: rgba(255, 255, 255, 0.75);
+}
+
+.footer__bg {
+   position: absolute;
+   top: -38px;
+   right: 0;
+   z-index: 2;
 }
