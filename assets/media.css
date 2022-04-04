@@ -1,0 +1,185 @@
+@media only screen and (max-width: 1441px) {
+
+   /* links */
+   .link__item {
+      font-size: 14px;
+   }
+
+   /* search */
+   .search__send__btn {
+      font-size: 13px;
+   }
+
+   /* popular */
+
+   .popular__item {
+      width: 300px;
+   }
+
+   .popular__img {
+      object-fit: contain;
+      width: 300px;
+   }
+}
+
+
+@media only screen and (max-width: 1201px) {
+
+   /* links */
+   .link__item {
+      font-size: 14px;
+      margin-left: 20px;
+   }
+
+   .link__item:first-child {
+      margin-left: 20px;
+   }
+
+   /* search */
+   .search__send__btn {
+      font-size: 11px;
+      padding: 15px 15px;
+   }
+
+   .search__box {
+      width: 50px;
+      height: 50px;
+   }
+
+   /* popular */
+
+   .popular__item {
+      width: 300px;
+      padding: 0;
+   }
+
+   .popular__img {
+      object-fit: contain;
+      width: 300px;
+   }
+   .popular__count span {
+      font-size: 16px;
+   }
+   .popular__title {
+      font-size: 45px;
+   }
+   /* intro */
+   .intro__title {
+      display: inline-block;
+      margin-bottom: 5px;
+      font-size: 35px;
+   }
+
+   .intro__text {
+      line-height: 58px;
+      font-size: 35px;
+   }
+
+   .intro__btn {
+      padding: 15px 60px;
+   }
+
+   /* ..clients */
+   .clients__item {
+      width: 31%;
+   }
+
+   .clients__content {
+      margin-top: 60px;
+      align-items: inherit;
+   }
+
+   .clients__text {
+      font-size: 15px;
+   }
+
+   .clinents__bg img {
+      width: 100%;
+   }
+
+   .collapsible__header {
+      font-size: 35px;
+      padding: 20px 0;
+   }
+
+   /* about */
+   .about__title {
+      margin-bottom: 45px;
+      font-size: 35px;
+   }
+
+   /* accordion */
+   .accordion {
+      width: 550px;
+   }
+
+   /* price */
+   .photo {
+      height: 500px;
+   }
+
+   .photo__bg {
+      height: 100%;
+   }
+
+   .price__content {
+      width: 550px;
+   }
+
+   .price__btn {
+      width: 160px;
+      height: 160px;
+   }
+
+   .price__title {
+      font-size: 45px;
+      line-height: 65px
+   }
+
+   /* photo */
+
+   .photo__group {
+      width: 400px;
+      right: -5%;
+   }
+
+   /* property */
+   .property {
+      margin: 40px 0;
+   }
+
+   /* .cloth */
+   .cloth__title {
+      font-size: 45PX;
+   }
+   .cloth__text {
+      font-size: 18px;
+   }
+
+   /* reviews */
+   .reviews__text {
+      margin-bottom: 40PX;
+      font-size: 14px;
+   }
+
+   .reviews__name {
+      font-size: 16px;
+   }
+
+   /* form */
+
+   .contact__form input {
+      padding: 20px;
+   }
+   .contact__form textarea  {
+      padding: 20px;
+   }
+
+   /* footer */
+   .footer__phone {
+      font-size: 28px;
+   }
+   .swiper-slide.reviews--slider {
+      width: 100%;
+   }
+}

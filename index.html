@@ -29,6 +29,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- style css -->
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/media.css" />
   </head>
   <body>
     <header>
@@ -78,18 +79,110 @@
             <a href="#" class="link__item">Контакты</a>
             <a href="#" class="link__item">Блог</a>
           </div>
-          <div class="search">
+          <div class="my-search">
             <a class="search__send__btn" href="#">Оставить заявку</a>
             <div class="search__icon">
               <img src="./assets/images/icon/search.svg" alt="" />
             </div>
             <div class="search__box">
               <img src="./assets/images/icon/fi_shopping-bag.svg" alt="" />
+              <div class="search__count">5</div>
+            </div>
+          </div>
+        </div>
+        <div class="search__inner">
+          <div class="searchbox animated zoomIn">
+            <form method="get">
+              <input
+                oninput="triggercross(this.value)"
+                type="text"
+                placeholder="search"
+                id="search"
+                name="search"
+                class="search"
+              /><i class="fas fa-search"></i>
+              <button
+                onclick="close1()"
+                id="closeid"
+                type="reset"
+                class="close"
+              >
+                <i class="fas fa-times"></i>
+                <p id="demo"></p>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="nav__inner" id="nav__inner">
+        <!-- <div class="nav__inner-bg"></div> -->
+        <div class="container">
+          <div class="nav__content">
+            <div class="nav__inner-cloes"><i class="fa-solid fa-x"></i></div>
+            <div class="nav__item">
+              <h1 class="nav__title">одежда</h1>
+              <p class="nav__text">Джинсы</p>
+              <p class="nav__text">Рубашки</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Куртка</p>
+              <p class="nav__text">Пиджаки</p>
+              <p class="nav__text">Джемперы</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Джинсы</p>
+            </div>
+            <div class="nav__item">
+              <h1 class="nav__title">Школьная форма</h1>
+              <p class="nav__text">Джинсы</p>
+              <p class="nav__text">Рубашки</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Куртка</p>
+              <p class="nav__text">Пиджаки</p>
+              <p class="nav__text">Джемперы</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Джинсы</p>
+            </div>
+            <div class="nav__item">
+              <h1 class="nav__title">Корпоративная униформа</h1>
+              <p class="nav__text">Джинсы</p>
+              <p class="nav__text">Рубашки</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Куртка</p>
+              <p class="nav__text">Пиджаки</p>
+              <p class="nav__text">Джемперы</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Джинсы</p>
+            </div>
+            <div class="nav__item">
+              <h1 class="nav__title">Брендированная промо продукция</h1>
+              <p class="nav__text">Джинсы</p>
+              <p class="nav__text">Рубашки</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Куртка</p>
+              <p class="nav__text">Пиджаки</p>
+              <p class="nav__text">Джемперы</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Джинсы</p>
+            </div>
+            <div class="nav__item nav__item-col">
+              <h1 class="nav__title">Текстиль для гостиниц и спа центров</h1>
+              <div class="nav__text-row">
+                <div class="nav__text-col">
+                  <p class="nav__text">Джинсы</p>
+                  <p class="nav__text">Рубашки</p>
+                  <p class="nav__text">Брюки</p>
+                  <p class="nav__text">Куртка</p>
+                </div>
+                <div class="nav__text-col">
+                  <p class="nav__text">Джинсы</p>
+                  <p class="nav__text">Рубашки</p>
+                  <p class="nav__text">Брюки</p>
+                  <p class="nav__text">Куртка</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="nav__inner" id="nav__inner"></div>
     </section>
     <!-- slider -->
 
@@ -160,10 +253,36 @@
                 <p>Посредничество</p>
               </div>
               <div class="collapsible__content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti optio voluptates rerum quibusdam sed maiores sint.
-                </p>
+                <div class="collapsible__inner">
+                  <div class="collapsible__item">
+                    <div class="collapsible__title">
+                      Кому подходит данная услуга
+                    </div>
+                    <div class="collapsible__text">
+                      «Производство под ĸлюч»! Униĸальные теĸстильные
+                      производства Узбеĸистана теперь доступны для Вас. Вы
+                      желаете пополнить свои ĸоллеĸции ĸрасивейшим натуральным
+                      шёлĸовыми или праĸтичными и разнообразными триĸотажными
+                      изделиями? Мы рады предложить Вам огромный выбор моделей.
+                      Весь процесс производства мы берём на себя!
+                    </div>
+                  </div>
+                  <div class="collapsible__item">
+                    <ul>
+                      <li>Изделия из Натурального Шелка</li>
+                      <li>
+                        Вязанные изделия из Хлопковой пряжи и смесовых пряжей
+                      </li>
+                      <li>Джинсовые изделия</li>
+                      <li>Трикотажные изделия</li>
+                      <li>И многое другое</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="collapsible__img">
+                  <img class="" src="./assets/images/accardion/1.png" alt="" />
+                </div>
+                <a class="all__btn collapsible__btn" href="#">Позвонить</a>
               </div>
             </div>
             <div class="accordion__collapsible">
@@ -171,12 +290,33 @@
                 <p>Посредничество</p>
               </div>
               <div class="collapsible__content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti optio voluptates rerum quibusdam sed maiores sint.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti optio voluptates rerum quibusdam sed maiores sint.
-                </p>
+                <div class="collapsible__inner">
+                  <div class="collapsible__item">
+                    <div class="collapsible__title">
+                      Кому подходит данная услуга
+                    </div>
+                    <div class="collapsible__text">
+                      У Вас есть представление о модели, леĸала построены, даже
+                      возможно уже заĸуплен материал и фурнитура, и Вы ищете
+                      аутсорс-производство? Мы возьмём весь процесс Вашего
+                      производства на себя!
+                    </div>
+                  </div>
+                  <div class="collapsible__item">
+                    <ol>
+                      <li>
+                        Составление Карты Заĸаза, Утверждение Техничесĸого
+                        Задания
+                      </li>
+                      <li>Подбор Материала, Фурнитуры, Заĸуп, Отшив</li>
+                      <li>Контроль Качества</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="collapsible__img">
+                  <img class="" src="./assets/images/accardion/2.png" alt="" />
+                </div>
+                <a class="all__btn collapsible__btn" href="#">Позвонить</a>
               </div>
             </div>
             <div class="accordion__collapsible">
@@ -184,15 +324,38 @@
                 <p>продукция из JCT каталога</p>
               </div>
               <div class="collapsible__content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti optio voluptates rerum quibusdam sed maiores sint.
-                </p>
+                <div class="collapsible__inner">
+                  <div class="collapsible__item">
+                    <div class="collapsible__title">
+                      Кому подходит данная услуга
+                    </div>
+                    <div class="collapsible__text">
+                      Мы таĸже постоянно разрабатываем свои собственные модели.
+                      Если Вы работаете в ритейле, и Вам понравились модели из
+                      Каталога JCT, мы произведём их для Вас под вашим брэндом.
+                    </div>
+                  </div>
+                  <div class="collapsible__item">
+                    <ol>
+                      <li>
+                        Выберите из представленного Каталога моделей JCT
+                        (возможно наличие на сĸладе)
+                      </li>
+                      <li>Разместите Заĸаз</li>
+                      <li>И, ждите свою посылĸу!</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="collapsible__img">
+                  <img class="" src="./assets/images/accardion/3.png" alt="" />
+                </div>
+                <a class="all__btn collapsible__btn" href="#">Позвонить</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- container -->
     </section>
 
     <!-- 
@@ -271,6 +434,22 @@
                       За 50 шт. <span>1 000 000 сум</span>
                     </div>
                   </div>
+                  <div class="popular__add">ДОбавить в ком.предл.</div>
+                  <div class="popular__add__click">
+                    <div class="popular__add__btns">
+                      <div class="popular__add__btn popular__add__btn--remove">
+                        -
+                      </div>
+                      <div class="popular__add__btn popular__add__btn--add">
+                        +
+                      </div>
+                    </div>
+                    <div class="popular__add__text">10 шт.</div>
+                    <div class="popular__add__img">
+                      <img src="./assets/images/icon/shoping.svg" alt="" />
+                      <img src="./assets/images/icon/Line.svg" alt="" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide my__slide">
@@ -287,6 +466,24 @@
                     </div>
                     <div class="popular__count">
                       За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                    <div class="popular__add">ДОбавить в ком.предл.</div>
+                    <div class="popular__add__click">
+                      <div class="popular__add__btns">
+                        <div
+                          class="popular__add__btn popular__add__btn--remove"
+                        >
+                          -
+                        </div>
+                        <div class="popular__add__btn popular__add__btn--add">
+                          +
+                        </div>
+                      </div>
+                      <div class="popular__add__text">10 шт.</div>
+                      <div class="popular__add__img">
+                        <img src="./assets/images/icon/shoping.svg" alt="" />
+                        <img src="./assets/images/icon/Line.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -306,6 +503,24 @@
                     <div class="popular__count">
                       За 50 шт. <span>1 000 000 сум</span>
                     </div>
+                    <div class="popular__add">ДОбавить в ком.предл.</div>
+                    <div class="popular__add__click">
+                      <div class="popular__add__btns">
+                        <div
+                          class="popular__add__btn popular__add__btn--remove"
+                        >
+                          -
+                        </div>
+                        <div class="popular__add__btn popular__add__btn--add">
+                          +
+                        </div>
+                      </div>
+                      <div class="popular__add__text">10 шт.</div>
+                      <div class="popular__add__img">
+                        <img src="./assets/images/icon/shoping.svg" alt="" />
+                        <img src="./assets/images/icon/Line.svg" alt="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -323,6 +538,24 @@
                     </div>
                     <div class="popular__count">
                       За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                    <div class="popular__add">ДОбавить в ком.предл.</div>
+                    <div class="popular__add__click">
+                      <div class="popular__add__btns">
+                        <div
+                          class="popular__add__btn popular__add__btn--remove"
+                        >
+                          -
+                        </div>
+                        <div class="popular__add__btn popular__add__btn--add">
+                          +
+                        </div>
+                      </div>
+                      <div class="popular__add__text">10 шт.</div>
+                      <div class="popular__add__img">
+                        <img src="./assets/images/icon/shoping.svg" alt="" />
+                        <img src="./assets/images/icon/Line.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -342,7 +575,24 @@
     <section>
       <div class="container">
         <div class="popular__content">
-          <div class="popular__title">Одежда</div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="cloth">
+        <div class="cloth__content">
+          <div id="cloth__content" class="cloth__title">Одежда</div>
+          <div id="two" class="cloth__text">Текстиль для гостиниц и спа центров</div>
+          <div id="3" class="cloth__text">Корпоративная Униформа</div>
+          <div id="4" class="cloth__text">Корпоративная Униформа</div>
+          <div id="5" class="cloth__text">Брендированная промо продукция</div>
+          <div  class="cloth__box">
+            <a href="#" class="property__box">Перейти в каталог</a>
+          </div>
+        </div>
+        <div class="cloth__slider">
           <div class="slider__btns">
             <div class="my__slide__prev slide__prev">
               <img src="./assets/images/icon/prev.svg" alt="" />
@@ -351,22 +601,6 @@
               <img src="./assets/images/icon/next.svg" alt="" />
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="cloth">
-        <div class="cloth__content">
-          <div class="cloth__text">Текстиль для гостиниц и спа центров</div>
-          <div class="cloth__text">Корпоративная Униформа</div>
-          <div class="cloth__text">Корпоративная Униформа</div>
-          <div class="cloth__text">Брендированная промо продукция</div>
-          <div class="cloth__box">
-            <a href="#" class="property__box">Перейти в каталог</a>
-          </div>
-        </div>
-        <div class="cloth__slider">
           <div class="swiper mySwiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide my__slide">
@@ -568,7 +802,7 @@
                 required
               ></textarea>
             </div>
-            <button type="submit">оставить заявку</button>
+            <button class="all__btn" type="submit">оставить заявку</button>
           </form>
         </div>
       </div>
@@ -622,10 +856,8 @@
           </div>
         </div>
       </div>
-      <img class="footer__bg" src="./assets/images/intro/footer.png" alt="">
-      <div class="footer__end">
-        © Joy Consult Uzbek Textile 2019-2022
-      </div>
+      <img class="footer__bg" src="./assets/images/intro/footer.png" alt="" />
+      <div class="footer__end">© Joy Consult Uzbek Textile 2019-2022</div>
     </footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
