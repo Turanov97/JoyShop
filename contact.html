@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link class="flot--icon" rel="icon" href="./assets/images/logo.png" />
+
+    <title>JOY Consult Textile</title>
+    <!-- fontawosome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper slide -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/media.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <a href="#" class="header__logo">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+          <div class="header__title">С каждым днем все лучше и лучше!</div>
+          <div class="header__contact">
+            <div class="select-wrap">
+              <select
+                class="custom-select"
+                id="select"
+                name="select"
+                placeholder="rus"
+              >
+                <option value="option1">Uzb</option>
+                <option value="option2">eng</option>
+                <option value="option3">rus</option>
+              </select>
+            </div>
+            <a href="tel:+9989 (85) 558 88 56" class="header__phone">
+              +9989 (85) 558 88 56
+            </a>
+          </div>
+        </div>
+        <!-- header -->
+      </div>
+      <!--  container -->
+    </header>
+
+    <section class="section__intro">
+      <div class="container">
+        <div class="intro">
+          <div class="menu">
+            <a class="nav__toggle" id="nav__toggle" type="button">
+              <span class="nav__toggle-item">menu</span>
+            </a>
+          </div>
+          <div class="links">
+            <a href="index.html" class="link__item">Главная</a>
+            <a href="#" class="link__item">О нас</a>
+            <a href="#" class="link__item">НАши услуги</a>
+            <a href="#" class="link__item">Каталог-Прайс</a>
+            <a href="#" class="link__item">Отзывы</a>
+            <a href="#" class="link__item">Контакты</a>
+            <a href="#" class="link__item">Блог</a>
+          </div>
+          <div class="my-search">
+            <a class="search__send__btn" href="#">Оставить заявку</a>
+            <div class="search__icon">
+              <img src="./assets/images/icon/search.svg" alt="" />
+            </div>
+            <div class="search__box">
+              <img src="./assets/images/icon/fi_shopping-bag.svg" alt="" />
+              <div class="search__count">5</div>
+            </div>
+          </div>
+        </div>
+        <div class="search__inner">
+          <div class="searchbox animated zoomIn">
+            <form method="get">
+              <input
+                oninput="triggercross(this.value)"
+                type="text"
+                placeholder="search"
+                id="search"
+                name="search"
+                class="search"
+              /><i class="fas fa-search"></i>
+              <button
+                onclick="close1()"
+                id="closeid"
+                type="reset"
+                class="close"
+              >
+                <i class="fas fa-times"></i>
+                <p id="demo"></p>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="nav__inner" id="nav__inner">
+        <!-- <div class="nav__inner-bg"></div> -->
+        <div class="container">
+          <div class="nav__content">
+            <div class="nav__inner-cloes"><i class="fa-solid fa-x"></i></div>
+            <div class="nav__item">
+              <h1 class="nav__title">одежда</h1>
+              <p class="nav__text">Джинсы</p>
+              <p class="nav__text">Рубашки</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Куртка</p>
+              <p class="nav__text">Пиджаки</p>
+              <p class="nav__text">Джемперы</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Джинсы</p>
+            </div>
+            <div class="nav__item">
+              <h1 class="nav__title">Школьная форма</h1>
+              <p class="nav__text">Джинсы</p>
+              <p class="nav__text">Рубашки</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Куртка</p>
+              <p class="nav__text">Пиджаки</p>
+              <p class="nav__text">Джемперы</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Джинсы</p>
+            </div>
+            <div class="nav__item">
+              <h1 class="nav__title">Корпоративная униформа</h1>
+              <p class="nav__text">Джинсы</p>
+              <p class="nav__text">Рубашки</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Куртка</p>
+              <p class="nav__text">Пиджаки</p>
+              <p class="nav__text">Джемперы</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Джинсы</p>
+            </div>
+            <div class="nav__item">
+              <h1 class="nav__title">Брендированная промо продукция</h1>
+              <p class="nav__text">Джинсы</p>
+              <p class="nav__text">Рубашки</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Куртка</p>
+              <p class="nav__text">Пиджаки</p>
+              <p class="nav__text">Джемперы</p>
+              <p class="nav__text">Брюки</p>
+              <p class="nav__text">Джинсы</p>
+            </div>
+            <div class="nav__item nav__item-col">
+              <h1 class="nav__title">Текстиль для гостиниц и спа центров</h1>
+              <div class="nav__text-row">
+                <div class="nav__text-col">
+                  <p class="nav__text">Джинсы</p>
+                  <p class="nav__text">Рубашки</p>
+                  <p class="nav__text">Брюки</p>
+                  <p class="nav__text">Куртка</p>
+                </div>
+                <div class="nav__text-col">
+                  <p class="nav__text">Джинсы</p>
+                  <p class="nav__text">Рубашки</p>
+                  <p class="nav__text">Брюки</p>
+                  <p class="nav__text">Куртка</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact__con">
+      <div class="container">
+        <div class="contact__con__inner">
+          <div class="contact__con__item">
+            <div class="contact__con__title">Контакты</div>
+            <div class="contact__con__subtitle">
+              Подписаться на E-mail рассылку
+            </div>
+            <form class="contact__con__form" action="">
+              <input type="text" placeholder="E-mail" />
+              <a class="contact__con__btn" href="#">Подписаться</a>
+            </form>
+          </div>
+          <div class="contact__con__item">
+            <div class="contact__con__intro">
+              <div class="contact__con__blog">
+                <div class="contact__blog__title">Местоположение</div>
+                <a
+                  class="contact__blog__loc"
+                  href="https://goo.gl/maps/JAMpydjKXG9Bt7aH9F"
+                  >Г.Ташкент, Яшнабадский р-н, Фаргона йули, 505/57</a
+                >
+              </div>
+              <div class="contact__con__blog">
+                <div class="contact__blog__title">Контакты</div>
+                <a class="contact__blog__tel" href="tel:+99898 812 88 99">
+                  +99898 812 88 99</a
+                >
+                <a class="contact__blog__tel" href="tel:+99890 315 07 38">
+                  +99890 315 07 38</a
+                >
+              </div>
+              <a href="#" class="footer__mail">management.jct@jcgroup.uz</a>
+            </div>
+            <div class="contact__blog__social">
+              <a href="#" class="footer__social__link"
+                ><i class="fa-solid fa-phone"></i
+              ></a>
+              <a href="#" class="footer__social__link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="footer__social__link"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="contact__location">
+        <div class="contact__location__title">
+          Наша локация
+        </div>
+        <div class="contact__maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.945438139031!2d69.31207311542205!3d41.26652387927553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae5f8d752e84db%3A0xd3328a1385f341cb!2zNTA1INCk0LDRgNKT0L7QvdCwINCZ0Z7Qu9C4LCDQotC-0YjQutC10L3Rgg!5e0!3m2!1sru!2s!4v1649159074220!5m2!1sru!2s"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__content">
+            <div class="popular__title">Свяжитесь с нами</div>
+            <img
+              class="contact__img"
+              src="./assets/images/intro/location.png"
+              alt=""
+            />
+          </div>
+          <form class="contact__form">
+            <div class="field" tabindex="1">
+              <label for="username"> </label>
+              <input name="username" type="text" placeholder="Имя*" required />
+            </div>
+            <div class="field" tabindex="2">
+              <label for="email"> </label>
+              <input name="email" type="text" placeholder="Телефон*" required />
+            </div>
+            <div class="field" tabindex="3">
+              <label for="email"> </label>
+              <input name="email" type="text" placeholder="E-mail*" required />
+            </div>
+            <div class="field" tabindex="4">
+              <label for="message"> </label>
+              <textarea
+                name="message"
+                placeholder="Примечание:"
+                required
+              ></textarea>
+            </div>
+            <button class="all__btn" type="submit">оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo footer__logo-media">
+          <img src="./assets/images/footer__logo.svg" alt="" />
+        </div>
+        <div class="footer__inner">
+          <div class="footer__item">
+            <div class="footer__blog">
+              <div class="footer__title">Каталог</div>
+              <a class="footer__text">Одежда</a>
+              <a class="footer__text"> Тектсиль для гостиниц и спа центров </a>
+              <a class="footer__text">Корпоративная униформа</a>
+              <a class="footer__text">Школьная форма</a>
+              <a class="footer__text">Брендированная промо продукция</a>
+            </div>
+            <div class="footer__blog">
+              <div class="footer__title">навигация</div>
+              <a class="footer__text">О компании</a>
+              <a class="footer__text">Наши услуги</a>
+              <a class="footer__text">Отзывы</a>
+              <a class="footer__text">Контакты</a>
+              <a class="footer__text"> Блог</a>
+            </div>
+          </div>
+          <div class="footer__item footer__item-logo">
+            <div class="footer__logo">
+              <img src="./assets/images/footer__logo.svg" alt="" />
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__contact">
+              <a class="footer__phone" href="tel:+9989 (98) 812 88 99"
+                >+9989 (98) 812 88 99</a
+              >
+              <a href="#" class="footer__mail">management.jct@jcgroup.uz</a>
+              <div class="footer__social">
+                <a href="#" class="footer__social__link"
+                  ><i class="fa-solid fa-phone"></i
+                ></a>
+                <a href="#" class="footer__social__link"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" class="footer__social__link"
+                  ><i class="fa-brands fa-telegram"></i
+                ></a>
+              </div>
+              <a href="#" class="footer__btn"> Оставить заявку </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="footer__bg" src="./assets/images/intro/footer.png" alt="" />
+      <div class="footer__end">© Joy Consult Uzbek Textile 2019-2022</div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

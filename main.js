@@ -241,3 +241,5 @@ function close1() {
     x.style.display = "block";
   }
 }
+
+
