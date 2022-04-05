@@ -630,4 +630,7 @@
       justify-content: center;
       align-items: center;
    }
+   .footer__social__link:first-child {
+      margin-left: 0;
+   }
 }
