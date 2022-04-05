@@ -118,21 +118,32 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper(".mySwiper1", {
   slidesPerView: 4,
-  spaceBetween: 30,
+  spaceBetween: 20,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
   breakpoints: {
-    480: {
+    1400: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      // spaceBetween: 40,
     },
-    "@640": {
-      slidesPerView: 5,
-      spaceBetween: 50,
+    1130: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1000: {
+      slidesPerView: 2.8,
+      spaceBetween: 20,
+    },
+    836: {
+      slidesPerView: 2.4,
+      spaceBetween: 20,
+    },
+    414: {
+      slidesPerView: 1,
+      // spaceBetween: 20,
     },
   },
-
   navigation: {
     nextEl: ".my__slide__next",
     prevEl: ".my__slide__prev",
@@ -140,11 +151,25 @@ var swiper = new Swiper(".mySwiper1", {
 });
 
 var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 2.3,
-  spaceBetween: 30,
+  // slidesPerView: 2.3,
+  spaceBetween: 20,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
+  breakpoints: {
+   1400: {  
+      slidesPerView: 2.3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView:  1.9,
+      spaceBetween: 30,
+    },
+    836: {
+      slidesPerView:  2.5,
+      spaceBetween: 30,
+    },
+  },
   navigation: {
     nextEl: ".slide__prev",
     prevEl: ".slide__next",
@@ -157,6 +182,32 @@ var swiper = new Swiper(".mySwiper3", {
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
+  breakpoints: {
+    1400: {
+      slidesPerView: 3,
+      // spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 2.5,
+      // spaceBetween: 20,
+    },
+    1100: {
+      slidesPerView: 2,
+      // spaceBetween: 20,
+    },
+    900: {
+      slidesPerView: 1.8,
+      // spaceBetween: 20,
+    },
+    836: {
+      slidesPerView: 1.5,
+      // spaceBetween: 20,
+    },
+    414: {
+      slidesPerView: 1.2,
+      // spaceBetween: 20,
+    },
+  },
   navigation: {
     nextEl: ".slide__prev",
     prevEl: ".slide__next",
