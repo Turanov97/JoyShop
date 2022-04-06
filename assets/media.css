@@ -536,11 +536,16 @@
    .contact__blog__loc {
       width: 80%;
    }
+   /* about__content
+    */
+    .about__content img {
+       display: none;
+    }
 
 }
 
 
-/* @media only screen and (max-width: 836px) */
+/* @media only screen and (max-width: 436px) */
 
 @media only screen and (max-width: 436px) {
    .container {
@@ -713,3 +718,4 @@
       margin-top: 100px;
    }
 }
+
