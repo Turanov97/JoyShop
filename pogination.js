@@ -5,7 +5,7 @@ const element = document.querySelector(".pagination ul");
 let totalPages = 20;
 let page = 10;
 if (typeof element !== "undefined") {
-  console.log(element);
+//   console.log(element);
   element.innerHTML = createPagination(totalPages, page);
   function createPagination(totalPages, page) {
     let liTag = "";

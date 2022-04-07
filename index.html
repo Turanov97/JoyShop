@@ -52,8 +52,8 @@
                 <option value="option3">rus</option>
               </select>
             </div>
-            <a href="tel:+9989 (85) 558 88 56" class="header__phone">
-              +9989 (85) 558 88 56
+            <a href="tel:+9989 (98) 812 88 99" class="header__phone">
+              +9989 (98) 812 88 99
             </a>
           </div>
         </div>
@@ -73,24 +73,25 @@
           <div class="links">
             <a href="#" class="link__item">Главная</a>
             <a href="about.html" class="link__item">О нас</a>
-            <a href="#" class="link__item">НАши услуги</a>
+            <div id="links" class="link__item">
+              НАши услуги
+              <div class="nav__box__inner">
+                <a href="#">Посредничество</a>
+                <a href="#">продукция под заказ</a>
+                <a href="#">продукция из JCT каталога</a>
+                <a href="#">Получить Комер.Предл.</a>
+              </div>
+            </div>
             <a href="catalog.html" class="link__item">Каталог-Прайс</a>
-            <a href="#" class="link__item">Отзывы</a>
+            <a href="#reviews" class="link__item">Отзывы</a>
             <a href="contact.html" class="link__item">Контакты</a>
             <a href="#" class="link__item">Блог</a>
           </div>
           <div class="nav__menu">
             <a href="#" class="link__item nav__menu__text">Главная</a>
-            <a href="#" id="nav__box" class="link__item nav__menu__text"
-              >Каталог-Прайс</a
-            >
-            <div class="nav__box__inner">
-              <a href="#">Посредничество</a>
-              <a href="#">продукция под заказ</a>
-              <a href="#">продукция из JCT каталога</a>
-              <a href="#">Получить Комер.Предл.</a>
-            </div>
+            <a href="#" class="link__item nav__menu__text">Каталог-Прайс</a>
           </div>
+
           <div class="my-search">
             <a class="search__send__btn" href="#">Оставить заявку</a>
             <div class="search__icon">
@@ -229,9 +230,6 @@
     </section>
 
     <section class="clients">
-      <div class="clinents__bg">
-        <img src="./assets/images/intro/clients-bg.png" alt="" />
-      </div>
       <div class="clients__content">
         <div class="clients__item">
           <h1 class="clients__title">40+</h1>
@@ -254,16 +252,14 @@
 
     <section>
       <div class="container">
-        <div class="about">
+        <div id="about" class="about">
           <div class="about__content">
             <div class="about__title">Наши услуги</div>
-            <img src="./assets/images/intro/about.png" alt="" />
+            <img src="./assets/images/intro/aboutIndex.png" alt="" />
           </div>
           <div class="accordion">
             <div class="accordion__collapsible">
-              <div class="collapsible__header">
-                <p>Посредничество</p>
-              </div>
+              <div class="collapsible__header">Посредничество</div>
               <div class="collapsible__content">
                 <div class="collapsible__inner">
                   <div class="collapsible__item">
@@ -298,9 +294,7 @@
               </div>
             </div>
             <div class="accordion__collapsible">
-              <div class="collapsible__header">
-                <p>Посредничество</p>
-              </div>
+              <div class="collapsible__header">продукция под заказ</div>
               <div class="collapsible__content">
                 <div class="collapsible__inner">
                   <div class="collapsible__item">
@@ -332,9 +326,7 @@
               </div>
             </div>
             <div class="accordion__collapsible">
-              <div class="collapsible__header">
-                <p>продукция из JCT каталога</p>
-              </div>
+              <div class="collapsible__header">продукция из JCT каталога</div>
               <div class="collapsible__content">
                 <div class="collapsible__inner">
                   <div class="collapsible__item">
@@ -693,7 +685,7 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section id="reviews" class="reviews">
       <div class="container">
         <div class="popular__content">
           <div class="popular__title">отзывы</div>

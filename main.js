@@ -64,9 +64,9 @@ $(function () {
     $(this).find(".popular__add").toggleClass("active");
   });
 
-  $("#nav__box").on("click", function () {
-    $(".nav__box__inner").toggleClass("active");
-  });
+  // $("#nav__box").on("click", function () {
+  //   $(".nav__box__inner").toggleClass("active");
+  // });
 
   const removeActiveClass = (query) => {
     $(`.${query}.active`).each(function () {
@@ -75,7 +75,6 @@ $(function () {
         $(this).removeClass("active");
       }, 0);
     });
-
   };
 
   // $('.item').click(function(){
@@ -264,25 +263,3 @@ $(document).ready(function () {
     return false;
   });
 });
-
-
-var mybutton = document.getElementById("myBtn")
-
-mybutton.addEventListener('click', topFunction)
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}

@@ -9,7 +9,9 @@ body {
 
 p {
    margin: 0;
+
 }
+
 
 a {
    text-decoration: none !important;
@@ -534,29 +536,32 @@ select.select-wrap {
 }
 
 
-
 .nav__box__inner {
    flex-direction: column;
-   width: 58%;
+   width: 40%;
    display: flex;
    background-color: #F4F7FB;
-   padding: 23px;
+   padding: 23px 0px 10px 23px;
    position: absolute;
    top: 100%;
-   left: 30%;
+   left: 21%;
    border-radius: 5px;
-   z-index: 3;
    opacity: 0;
    visibility: hidden;
    transition: all .3s ease-in;
-   z-index: -111;
+   z-index: 4;
+}
+#links:hover .nav__box__inner {
+   opacity: 1;
+   visibility: visible;
 }
 
-.nav__box__inner.active {
+
+/* .nav__box__inner.active {
    opacity: 1;
    visibility: visible;
    z-index: 3;
-}
+} */
 
 .nav__menu {
    display: none;
@@ -570,6 +575,7 @@ select.select-wrap {
    line-height: 176%;
    text-transform: uppercase;
    color: #2E7E7C;
+   margin-bottom: 10px;
 }
 
 /* search */
@@ -767,9 +773,9 @@ form {
    transition: all .2s ease-in-out;
 }
 
-.my__slide__prev:hover, .my__slide__next:hover {
+/* .my__slide__prev:hover, .my__slide__next:hover {
    background-color: #145553;
-}
+} */
 
 .my__slide__prev {
    margin-right: 60px;
@@ -819,8 +825,9 @@ form {
 }
 
 .clients__content {
+   margin-top: 80px;
    display: flex;
-   justify-content: flex-start;
+   justify-content: space-around;
    align-items: center;
    width: 100%;
 }
@@ -829,7 +836,7 @@ form {
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 28.33333%;
+   width: 20%;
 }
 
 .clients__title {
@@ -857,7 +864,7 @@ form {
 /* about */
 
 .about {
-   margin-top: 70px;
+   margin-top: 150px;
    display: flex;
    justify-content: space-between;
    position: relative;
@@ -905,7 +912,7 @@ form {
    cursor: pointer;
 
 
-   font-family: 'Prata';
+   font-family: 'prata' !important;
    font-style: normal;
    font-weight: 400;
    font-size: 25px;
@@ -1381,6 +1388,12 @@ form {
    color: rgba(0, 0, 0, 0.51);
    padding: 19px 0;
    border-bottom: 1px solid rgba(46, 126, 124, 0.25);
+   transition: .2s linear;
+   cursor: pointer;
+}
+
+.cloth__text:hover {
+   color: #2E7E7C;
 }
 
 .cloth__text:first-child {
@@ -1908,8 +1921,8 @@ reviews */
 
 .prodNav .ptItem.active,
 .prodNav .ptItem:hover {
-   background: #652796;
-   border-color: #652796;
+   background: #2E7E7C;
+   border-color: #2E7E7C;
    color: #ffffff;
 }
 
@@ -1995,8 +2008,7 @@ select {
    background-position: right 1rem top calc(50% + 4px);
    background-repeat: no-repeat;
 }
-
-.checkbox__text {
+.checkbox__text label {
    font-family: 'Inter';
    font-style: italic;
    font-weight: 400 !important;
@@ -2005,13 +2017,19 @@ select {
    color: rgba(20, 85, 83, 0.75);
 }
 
+.checkbox__text input[type="checkbox"] {
+   margin-right: 5px ;
+   transform:scale(1.5);
+   border: 1px solid #fff;
+ }
 .checkbox__inner {
    display: flex;
    flex-direction: column;
+   padding: 0px 0 15px 25px;
 }
 
 .checkbox__header {
-   padding: 25px;
+   padding: 15px 0px 15px 25px;
    font-family: 'Inter';
    font-style: italic;
    font-weight: 400;
