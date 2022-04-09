@@ -70,7 +70,7 @@ $(function () {
 
   const removeActiveClass = (query) => {
     $(`.${query}.active`).each(function () {
-      console.log($(this));
+      // console.log($(this));
       setTimeout(() => {
         $(this).removeClass("active");
       }, 0);
@@ -149,8 +149,8 @@ var swiper = new Swiper(".mySwiper1", {
     },
   },
   navigation: {
-    nextEl: ".my__slide__next",
-    prevEl: ".my__slide__prev",
+    nextEl: ".my__slide__prev",
+    prevEl: ".my__slide__next",
   },
 });
 
@@ -175,8 +175,10 @@ var swiper = new Swiper(".mySwiper2", {
     },
   },
   navigation: {
-    nextEl: ".slide__prev",
-    prevEl: ".slide__next",
+    nextEl: ".my__slide__prev",
+    prevEl: ".my__slide__",
+    // nextEl: ".swiper-button-next",
+    // prevEl: ".swiper-button-prev",
   },
 });
 
@@ -213,8 +215,8 @@ var swiper = new Swiper(".mySwiper3", {
     },
   },
   navigation: {
-    nextEl: ".slide__prev",
-    prevEl: ".slide__next",
+    nextEl: ".my__slide__prev",
+    prevEl: ".my__slide__next",
   },
 });
 

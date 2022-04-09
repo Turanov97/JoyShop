@@ -165,7 +165,6 @@ select.select-wrap {
 .custom-select-trigger:hover {
    background-color: #2E7E7C;
    color: #fff;
-   border: transparent
 }
 
 .custom-select-trigger:after {
@@ -289,7 +288,7 @@ select.select-wrap {
    font-family: 'Prata';
    font-style: normal;
    font-weight: 400;
-   font-size: 50px;
+   font-size: 49px;
    line-height: 70px;
    text-transform: uppercase;
    color: #FFFFFF;
@@ -352,6 +351,7 @@ select.select-wrap {
    text-transform: uppercase;
    color: #F4F7FB;
    margin-left: 43px;
+   cursor: pointer;
    transition: .2s ease-in;
 }
 
@@ -551,6 +551,7 @@ select.select-wrap {
    transition: all .3s ease-in;
    z-index: 4;
 }
+
 #links:hover .nav__box__inner {
    opacity: 1;
    visibility: visible;
@@ -773,9 +774,14 @@ form {
    transition: all .2s ease-in-out;
 }
 
-/* .my__slide__prev:hover, .my__slide__next:hover {
-   background-color: #145553;
-} */
+.my__slide__btn {
+   border: 1px solid #2E7E7C;
+}
+
+.my__slide__prev:hover, .my__slide__next:hover {
+   background-color: #2E7E7C;
+   color: #fff;
+}
 
 .my__slide__prev {
    margin-right: 60px;
@@ -926,6 +932,7 @@ form {
    content: '+';
    position: relative;
    right: 10px;
+   font-size: 50px;
 }
 
 .collapsible__content {
@@ -1496,6 +1503,13 @@ reviews */
    border: none;
    height: 130px;
    padding: 21px 49px;
+
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 140%;
+   color: rgba(0, 0, 0, 0.35);
 }
 
 .all__btn {
@@ -2008,6 +2022,7 @@ select {
    background-position: right 1rem top calc(50% + 4px);
    background-repeat: no-repeat;
 }
+
 .checkbox__text label {
    font-family: 'Inter';
    font-style: italic;
@@ -2018,10 +2033,11 @@ select {
 }
 
 .checkbox__text input[type="checkbox"] {
-   margin-right: 5px ;
-   transform:scale(1.5);
+   margin-right: 5px;
+   transform: scale(1.5);
    border: 1px solid #fff;
- }
+}
+
 .checkbox__inner {
    display: flex;
    flex-direction: column;
@@ -2281,11 +2297,12 @@ select {
 }
 
 .product__items {
-   width: 65%;
+   width: 60%;
 }
 
 
 .product__item {
+   position: relative;
    width: 100%;
    margin-top: 20px;
    display: flex;
@@ -2319,13 +2336,16 @@ select {
    border-radius: 80px;
    border: 1px solid #20B2AA;
 }
+.product__blogs {
+   display: flex;
+}
 
 .product__blog {
-   margin-right: 150px;
+   margin-left: 150px;
 }
 
 .product__blog:first-child {
-   margin-right: 0;
+   margin-left: 0;
 }
 
 .product__blog__text {
@@ -2429,7 +2449,7 @@ select {
 
 .product__total {
    margin-top: 35px;
-   width: 30%;
+   width: 33%;
    position: sticky;
    top: 70px;
    left: 50px;
@@ -2449,6 +2469,13 @@ select {
    background: #2E7E7C;
    position: absolute;
    top: 0;
+}
+
+.product__price__cloth {
+   position: absolute;
+   top: 16%;
+   right: 0;
+   z-index: 2;
 }
 
 .footer__product {
@@ -2499,7 +2526,7 @@ select {
 
 .total__btn {
    display: inline-block;
-   padding: 18.5px 22.5px;
+   padding: 18.5px 45.5px;
    font-family: 'Inter';
    font-style: italic;
    font-weight: 400;

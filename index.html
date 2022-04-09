@@ -15,6 +15,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- font--family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"
+    />
     <!-- swiper slide -->
     <link
       rel="stylesheet"
@@ -76,10 +83,10 @@
             <div id="links" class="link__item">
               НАши услуги
               <div class="nav__box__inner">
-                <a href="#">Посредничество</a>
-                <a href="#">продукция под заказ</a>
-                <a href="#">продукция из JCT каталога</a>
-                <a href="#">Получить Комер.Предл.</a>
+                <a href="#about">Посредничество</a>
+                <a href="#produ">продукция под заказ</a>
+                <a href="#jct">продукция из JCT каталога</a>
+                <a href="#property__box">Получить Комер.Предл.</a>
               </div>
             </div>
             <a href="catalog.html" class="link__item">Каталог-Прайс</a>
@@ -255,7 +262,7 @@
         <div id="about" class="about">
           <div class="about__content">
             <div class="about__title">Наши услуги</div>
-            <img src="./assets/images/intro/aboutIndex.png" alt="" />
+            <img src="./assets/images/intro/aboutIndex.svg" alt="" />
           </div>
           <div class="accordion">
             <div class="accordion__collapsible">
@@ -294,7 +301,9 @@
               </div>
             </div>
             <div class="accordion__collapsible">
-              <div class="collapsible__header">продукция под заказ</div>
+              <div id="produ" class="collapsible__header">
+                продукция под заказ
+              </div>
               <div class="collapsible__content">
                 <div class="collapsible__inner">
                   <div class="collapsible__item">
@@ -326,7 +335,9 @@
               </div>
             </div>
             <div class="accordion__collapsible">
-              <div class="collapsible__header">продукция из JCT каталога</div>
+              <div id="jct" class="collapsible__header">
+                продукция из JCT каталога
+              </div>
               <div class="collapsible__content">
                 <div class="collapsible__inner">
                   <div class="collapsible__item">
@@ -395,11 +406,11 @@
             src="./assets/images/intro/photo-blog.jpg"
             alt=""
           />
-          <img
+          <!-- <img
             class="photo__group"
             src="./assets/images/intro/photo-group.png"
             alt=""
-          />
+          /> -->
         </div>
       </div>
     </section>
@@ -413,10 +424,10 @@
             <div class="popular__title">популярная продукция</div>
             <div class="slider__btns">
               <div class="my__slide__prev">
-                <img src="./assets/images/icon/prev.svg" alt="" />
+                <i class="fa-solid fa-chevron-left"></i>
               </div>
               <div class="my__slide__next">
-                <img src="./assets/images/icon/next.svg" alt="" />
+                <i class="fa-solid fa-chevron-right"></i>
               </div>
             </div>
           </div>
@@ -572,7 +583,9 @@
 
     <section class="property">
       <div class="container">
-        <a href="#" class="property__box">получить комер. предл.</a>
+        <a id="property__box" href="#" class="property__box"
+          >получить комер. предл.</a
+        >
       </div>
     </section>
 
@@ -598,11 +611,11 @@
         </div>
         <div class="cloth__slider">
           <div class="slider__btns">
-            <div class="my__slide__prev slide__prev">
-              <img src="./assets/images/icon/prev.svg" alt="" />
+            <div class="my__slide__prev">
+              <i class="fa-solid fa-chevron-left"></i>
             </div>
-            <div class="my__slide__next slide__next">
-              <img src="./assets/images/icon/next.svg" alt="" />
+            <div class="my__slide__next">
+              <i class="fa-solid fa-chevron-right"></i>
             </div>
           </div>
           <div class="swiper mySwiper2">
@@ -622,6 +635,24 @@
                     <div class="popular__count">
                       За 50 шт. <span>1 000 000 сум</span>
                     </div>
+                    <div class="popular__add">ДОбавить в ком.предл.</div>
+                    <div class="popular__add__click">
+                      <div class="popular__add__btns">
+                        <div
+                          class="popular__add__btn popular__add__btn--remove"
+                        >
+                          -
+                        </div>
+                        <div class="popular__add__btn popular__add__btn--add">
+                          +
+                        </div>
+                      </div>
+                      <div class="popular__add__text">10 шт.</div>
+                      <div class="popular__add__img">
+                        <img src="./assets/images/icon/shoping.svg" alt="" />
+                        <img src="./assets/images/icon/Line.svg" alt="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -639,6 +670,24 @@
                     </div>
                     <div class="popular__count">
                       За 50 шт. <span>1 000 000 сум</span>
+                    </div>
+                    <div class="popular__add">ДОбавить в ком.предл.</div>
+                    <div class="popular__add__click">
+                      <div class="popular__add__btns">
+                        <div
+                          class="popular__add__btn popular__add__btn--remove"
+                        >
+                          -
+                        </div>
+                        <div class="popular__add__btn popular__add__btn--add">
+                          +
+                        </div>
+                      </div>
+                      <div class="popular__add__text">10 шт.</div>
+                      <div class="popular__add__img">
+                        <img src="./assets/images/icon/shoping.svg" alt="" />
+                        <img src="./assets/images/icon/Line.svg" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -658,6 +707,24 @@
                     <div class="popular__count">
                       За 50 шт. <span>1 000 000 сум</span>
                     </div>
+                    <div class="popular__add">ДОбавить в ком.предл.</div>
+                    <div class="popular__add__click">
+                      <div class="popular__add__btns">
+                        <div
+                          class="popular__add__btn popular__add__btn--remove"
+                        >
+                          -
+                        </div>
+                        <div class="popular__add__btn popular__add__btn--add">
+                          +
+                        </div>
+                      </div>
+                      <div class="popular__add__text">10 шт.</div>
+                      <div class="popular__add__img">
+                        <img src="./assets/images/icon/shoping.svg" alt="" />
+                        <img src="./assets/images/icon/Line.svg" alt="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -676,6 +743,24 @@
                     <div class="popular__count">
                       За 50 шт. <span>1 000 000 сум</span>
                     </div>
+                    <div class="popular__add">ДОбавить в ком.предл.</div>
+                    <div class="popular__add__click">
+                      <div class="popular__add__btns">
+                        <div
+                          class="popular__add__btn popular__add__btn--remove"
+                        >
+                          -
+                        </div>
+                        <div class="popular__add__btn popular__add__btn--add">
+                          +
+                        </div>
+                      </div>
+                      <div class="popular__add__text">10 шт.</div>
+                      <div class="popular__add__img">
+                        <img src="./assets/images/icon/shoping.svg" alt="" />
+                        <img src="./assets/images/icon/Line.svg" alt="" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -690,11 +775,11 @@
         <div class="popular__content">
           <div class="popular__title">отзывы</div>
           <div class="slider__btns">
-            <div class="my__slide__prev slide__prev">
-              <img src="./assets/images/icon/prev.svg" alt="" />
+            <div class="my__slide__prev">
+              <i class="fa-solid fa-chevron-left"></i>
             </div>
-            <div class="my__slide__next slide__next">
-              <img src="./assets/images/icon/next.svg" alt="" />
+            <div class="my__slide__next">
+              <i class="fa-solid fa-chevron-right"></i>
             </div>
           </div>
         </div>
@@ -781,7 +866,7 @@
             <div class="popular__title">Свяжитесь с нами</div>
             <img
               class="contact__img"
-              src="./assets/images/intro/contact.png"
+              src="./assets/images/intro/contact.svg"
               alt=""
             />
           </div>
