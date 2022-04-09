@@ -1,39 +1,39 @@
 /* select======== */
+const getSelectTemplate = (classes, placeholder, content) => `
+    <div class="${classes}">
+      <span class="custom-select-trigger">${placeholder}</span>
+      <div class="custom-options">
+          ${content}
+      </div>
+    </div>
+`;
+
+const getOptionTemplate = (value, text) => `<span class="custom-option" data-value="${value}">${text}</span> `
+
 document.querySelectorAll(".select-wrap").forEach(function (wrap) {
   let select = wrap.querySelector(".custom-select");
-  let classes = select.getAttribute("class"),
-    id = select.getAttribute("id"),
-    name = select.getAttribute("name");
-  let template = '<div class="' + classes + '">';
-  template +=
-    '<span class="custom-select-trigger">' +
-    select.getAttribute("placeholder") +
-    "</span>";
-  template += '<div class="custom-options">';
-  select.querySelectorAll("option").forEach(function (option) {
-    template +=
-      '<span class="custom-option' +
-      '"data-value="' +
-      option.getAttribute("value") +
-      '">' +
-      option.innerText +
-      "</span>";
-  });
-  template += "</div></div>";
+  let classes = select.getAttribute("class");
+  let id = select.getAttribute("id");
+  let name = select.getAttribute("name");
+
+  const options = select.querySelectorAll("option");
+  let content =  Array.from(options).map(option => getOptionTemplate(option.getAttribute("value"), option.innerText)).join(' ');
+  let template = getSelectTemplate(classes, select.getAttribute("placeholder"), content);
+  
   let select_wrapper = document.createElement("div");
   select.style.display = "none";
   select_wrapper.innerHTML = `<div class="custom-select-wrapper">${template}</div>`;
   wrap.appendChild(select_wrapper);
 });
 
-document
-  .querySelector(".custom-select-trigger")
-  .addEventListener("click", function () {
-    document
-      .querySelector(".custom-select-trigger")
-      .closest(".custom-select")
-      .classList.toggle("opened");
-  });
+const triggers = document.querySelectorAll(".custom-select-trigger");
+triggers.forEach(t => t.addEventListener('click', (e) => {
+  e
+  .target
+  .closest(".custom-select")
+  .classList.toggle("opened");
+}))
+
 document.querySelectorAll(".custom-option").forEach((option) => {
   option.addEventListener("click", function () {
     option.closest(".select-wrap").querySelector("select").value =
@@ -44,6 +44,7 @@ document.querySelectorAll(".custom-option").forEach((option) => {
       .querySelector(".custom-select-trigger").innerText = option.innerText;
   });
 });
+
 
 $(function () {
   /* menu nav bar */
@@ -113,14 +114,14 @@ items.forEach((texts) =>
 // }
 
 /* swiper slider */
-var swiper = new Swiper(".mySwiper", {
+new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
 
-var swiper = new Swiper(".mySwiper1", {
+new Swiper(".mySwiper1", {
   slidesPerView: 4,
   spaceBetween: 20,
   slidesPerGroup: 1,
@@ -132,7 +133,7 @@ var swiper = new Swiper(".mySwiper1", {
       // spaceBetween: 40,
     },
     1130: {
-      slidesPerView: 3,
+      slidesPerView: 3.8,
       spaceBetween: 20,
     },
     1000: {
@@ -149,13 +150,13 @@ var swiper = new Swiper(".mySwiper1", {
     },
   },
   navigation: {
-    nextEl: ".my__slide__prev",
-    prevEl: ".my__slide__next",
+    nextEl: ".my__slide__prev_popular",
+    prevEl: ".my__slide__next_popular",
   },
 });
 
-var swiper = new Swiper(".mySwiper2", {
-  // slidesPerView: 2.3,
+new Swiper(".mySwiper2", {
+  // slidesPerView: 2.2,
   spaceBetween: 20,
   slidesPerGroup: 1,
   loop: true,
@@ -173,16 +174,16 @@ var swiper = new Swiper(".mySwiper2", {
       slidesPerView: 2.5,
       spaceBetween: 30,
     },
-  },
+  }, 
   navigation: {
-    nextEl: ".my__slide__prev",
-    prevEl: ".my__slide__",
+    nextEl: ".my__slide__prev_clothes",
+    prevEl: ".my__slide__next_clothes",
     // nextEl: ".swiper-button-next",
     // prevEl: ".swiper-button-prev",
   },
 });
 
-var swiper = new Swiper(".mySwiper3", {
+ new Swiper(".mySwiper3", {
   slidesPerView: 3,
   // spaceBetween: 30,
   slidesPerGroup: 1,
@@ -215,8 +216,8 @@ var swiper = new Swiper(".mySwiper3", {
     },
   },
   navigation: {
-    nextEl: ".my__slide__prev",
-    prevEl: ".my__slide__next",
+    nextEl: ".my__slide__prev_reviews",
+    prevEl: ".my__slide__next_reviews",
   },
 });
 

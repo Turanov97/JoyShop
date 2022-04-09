@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link class="flot--icon" rel="icon" href="./assets/images/logo.png" />
+    <link class="flot--icon" rel="icon" href="./assets/images/logo.svg" />
 
     <title>JOY Consult Textile</title>
     <!-- fontawosome icons -->
@@ -15,17 +15,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- swiper slide -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-    <!-- google fonts -->
+    <!-- font--family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
       rel="stylesheet"
+    />
+    <!-- swiper slide -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <!-- bootstrap -->
     <link
@@ -42,8 +42,8 @@
     <header>
       <div class="container">
         <div class="header">
-          <a href="#" class="header__logo">
-            <img src="./assets/images/logo.png" alt="" />
+          <a href="index.html" class="header__logo">
+            <img src="./assets/images/logo.svg" alt="" />
           </a>
           <div class="header__title">С каждым днем все лучше и лучше!</div>
           <div class="header__contact">
@@ -80,22 +80,25 @@
           <div class="links">
             <a href="index.html" class="link__item">Главная</a>
             <a href="about.html" class="link__item">О нас</a>
-            <a href="#about" class="link__item">НАши услуги</a>
+            <div id="links" class="link__item">
+              НАши услуги
+              <div class="nav__box__inner">
+                <a href="#about">Посредничество</a>
+                <a href="#produ">продукция под заказ</a>
+                <a href="#jct">продукция из JCT каталога</a>
+                <a href="#property__box">Получить Комерческое предложение</a>
+              </div>
+            </div>
             <a href="catalog.html" class="link__item">Каталог-Прайс</a>
             <a href="#reviews" class="link__item">Отзывы</a>
             <a href="contact.html" class="link__item">Контакты</a>
             <a href="#" class="link__item">Блог</a>
-            <div class="nav__box__inner">
-              <a href="#">Посредничество</a>
-              <a href="#">продукция под заказ</a>
-              <a href="#">продукция из JCT каталога</a>
-              <a href="#">Получить Комер.Предл.</a>
-            </div>
           </div>
           <div class="nav__menu">
             <a href="#" class="link__item nav__menu__text">Главная</a>
             <a href="#" class="link__item nav__menu__text">Каталог-Прайс</a>
           </div>
+
           <div class="my-search">
             <a class="search__send__btn" href="#">Оставить заявку</a>
             <div class="search__icon">
@@ -222,7 +225,7 @@
           <div class="product__item">
             <img
               class="product__img"
-              src="./assets/images/about/1.png"
+              src="./assets/images/popular/1.png"
               alt=""
             />
             <div class="product__blogs">
@@ -261,7 +264,132 @@
               <i class="fa-solid fa-x"></i>
             </div>
           </div>
-       
+          <div class="product__item">
+            <img
+              class="product__img"
+              src="./assets/images/popular/2.png"
+              alt=""
+            />
+            <div class="product__blogs">
+              <div class="product__blog">
+                <div class="product__blog__title">Верх SUNNY</div>
+                <div class="product__blog__text">
+                  Артикул: <span>15544889</span>
+                </div>
+                <div class="product__btns">
+                  <a href="#" class="product__btn remove">-</a>
+                  <a href="#" class="product__btn">10 шт.</a>
+                  <a href="#" class="product__btn add">+</a>
+                </div>
+              </div>
+              <div class="product__blog product__blog-respon">
+                <div class="product__price">
+                  <div class="product__price__title">Стоимость:</div>
+                  <div class="product__price__text">
+                    За <span class="products__count">50</span> шт.
+                    <span class="product__price__amor">2 000 000</span>
+                  </div>
+                  <div class="product__price__text">
+                    За <span class="products__count">50</span> шт.
+                    <span class="product__price__amor">2 000 000</span>
+                  </div>
+                </div>
+                <div class="product__price">
+                  <div class="product__price__title">Общая стоимость:</div>
+                  <div class="product__price__count">5 000 000 сум</div>
+                  <div class="product__price__count">500$</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__price__cloth">
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </div>
+          <div class="product__item">
+            <img
+              class="product__img"
+              src="./assets/images/popular/3.png"
+              alt=""
+            />
+            <div class="product__blogs">
+              <div class="product__blog">
+                <div class="product__blog__title">Верх SUNNY</div>
+                <div class="product__blog__text">
+                  Артикул: <span>15544889</span>
+                </div>
+                <div class="product__btns">
+                  <a href="#" class="product__btn remove">-</a>
+                  <a href="#" class="product__btn">10 шт.</a>
+                  <a href="#" class="product__btn add">+</a>
+                </div>
+              </div>
+              <div class="product__blog product__blog-respon">
+                <div class="product__price">
+                  <div class="product__price__title">Стоимость:</div>
+                  <div class="product__price__text">
+                    За <span class="products__count">50</span> шт.
+                    <span class="product__price__amor">2 000 000</span>
+                  </div>
+                  <div class="product__price__text">
+                    За <span class="products__count">50</span> шт.
+                    <span class="product__price__amor">2 000 000</span>
+                  </div>
+                </div>
+                <div class="product__price">
+                  <div class="product__price__title">Общая стоимость:</div>
+                  <div class="product__price__count">5 000 000 сум</div>
+                  <div class="product__price__count">500$</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__price__cloth">
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </div>
+          <div class="product__item">
+            <img
+              class="product__img"
+              src="./assets/images/popular/1.png"
+              alt=""
+            />
+            <div class="product__blogs">
+              <div class="product__blog">
+                <div class="product__blog__title">Верх SUNNY</div>
+                <div class="product__blog__text">
+                  Артикул: <span>15544889</span>
+                </div>
+                <div class="product__btns">
+                  <a href="#" class="product__btn remove">-</a>
+                  <a href="#" class="product__btn">10 шт.</a>
+                  <a href="#" class="product__btn add">+</a>
+                </div>
+              </div>
+              <div class="product__blog product__blog-respon">
+                <div class="product__price">
+                  <div class="product__price__title">Стоимость:</div>
+                  <div class="product__price__text">
+                    За <span class="products__count">50</span> шт.
+                    <span class="product__price__amor">2 000 000</span>
+                  </div>
+                  <div class="product__price__text">
+                    За <span class="products__count">50</span> шт.
+                    <span class="product__price__amor">2 000 000</span>
+                  </div>
+                </div>
+                <div class="product__price">
+                  <div class="product__price__title">Общая стоимость:</div>
+                  <div class="product__price__count">5 000 000 сум</div>
+                  <div class="product__price__count">500$</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__price__cloth">
+              <i class="fa-solid fa-x"></i>
+            </div>
+          </div>
         </div>
         <div id="total" class="product__total">
           <div class="total__item">

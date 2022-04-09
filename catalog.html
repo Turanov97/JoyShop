@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link class="flot--icon" rel="icon" href="./assets/images/logo.png" />
+    <link class="flot--icon" rel="icon" href="./assets/images/logo.svg" />
 
     <title>JOY Consult Textile</title>
     <!-- fontawosome icons -->
@@ -15,7 +15,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- font--family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,8 +42,8 @@
     <header>
       <div class="container">
         <div class="header">
-          <a href="#" class="header__logo">
-            <img src="./assets/images/logo.png" alt="" />
+          <a href="index.html" class="header__logo">
+            <img src="./assets/images/logo.svg" alt="" />
           </a>
           <div class="header__title">С каждым днем все лучше и лучше!</div>
           <div class="header__contact">
@@ -81,23 +80,30 @@
           <div class="links">
             <a href="index.html" class="link__item">Главная</a>
             <a href="about.html" class="link__item">О нас</a>
-            <a href="#about" class="link__item">НАши услуги</a>
+            <div id="links" class="link__item">
+              НАши услуги
+              <div class="nav__box__inner">
+                <a href="#about">Посредничество</a>
+                <a href="#produ">продукция под заказ</a>
+                <a href="#jct">продукция из JCT каталога</a>
+                <a href="#property__box">Получить Комерческое предложение</a>
+              </div>
+            </div>
             <a href="catalog.html" class="link__item">Каталог-Прайс</a>
             <a href="#reviews" class="link__item">Отзывы</a>
             <a href="contact.html" class="link__item">Контакты</a>
             <a href="#" class="link__item">Блог</a>
-            <div class="nav__box__inner">
-              <a href="#">Посредничество</a>
-              <a href="#">продукция под заказ</a>
-              <a href="#">продукция из JCT каталога</a>
-              <a href="#">Получить Комер.Предл.</a>
-            </div>
           </div>
+          <div class="nav__menu">
+            <a href="#" class="link__item nav__menu__text">Главная</a>
+            <a href="#" class="link__item nav__menu__text">Каталог-Прайс</a>
+          </div>
+
           <div class="my-search">
             <a class="search__send__btn" href="#">Оставить заявку</a>
-            <a href="#" class="search__icon">
+            <div class="search__icon">
               <img src="./assets/images/icon/search.svg" alt="" />
-            </a>
+            </div>
             <a href="product.html" class="search__box">
               <img src="./assets/images/icon/fi_shopping-bag.svg" alt="" />
               <div class="search__count">5</div>
@@ -214,15 +220,19 @@
           <li id="pTab3" class="ptItem">Бредовая промо продукция</li>
           <li id="pTab2" class="ptItem">Школьная форма</li>
         </div>
-        <select class="catalog__select" name="pets" id="pet-select">
-          <option value="">Сортировать</option>
-          <option value="dog">Dog</option>
-          <option value="cat">Cat</option>
-          <option value="hamster">Hamster</option>
-          <option value="parrot">Parrot</option>
-          <option value="spider">Spider</option>
-          <option value="goldfish">Goldfish</option>
-        </select>
+        <div class="select-wrap ">
+          <select
+            class="custom-select"
+            id="select"
+            name="select"
+            placeholder="Сортировать"
+          >
+            <option value="option1">По популярности</option>
+            <option value="option2">По новинкам</option>
+            <option value="option3">От низко цены</option>
+            <option value="option4">От высокой цены</option>
+          </select>
+        </div>
       </div>
       <div class="tabs__menu">
         <div class="accordion tabs__accordion">
