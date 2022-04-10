@@ -8,7 +8,8 @@ const getSelectTemplate = (classes, placeholder, content) => `
     </div>
 `;
 
-const getOptionTemplate = (value, text) => `<span class="custom-option" data-value="${value}">${text}</span> `
+const getOptionTemplate = (value, text) =>
+  `<span class="custom-option" data-value="${value}">${text}</span> `;
 
 document.querySelectorAll(".select-wrap").forEach(function (wrap) {
   let select = wrap.querySelector(".custom-select");
@@ -17,9 +18,17 @@ document.querySelectorAll(".select-wrap").forEach(function (wrap) {
   let name = select.getAttribute("name");
 
   const options = select.querySelectorAll("option");
-  let content =  Array.from(options).map(option => getOptionTemplate(option.getAttribute("value"), option.innerText)).join(' ');
-  let template = getSelectTemplate(classes, select.getAttribute("placeholder"), content);
-  
+  let content = Array.from(options)
+    .map((option) =>
+      getOptionTemplate(option.getAttribute("value"), option.innerText)
+    )
+    .join(" ");
+  let template = getSelectTemplate(
+    classes,
+    select.getAttribute("placeholder"),
+    content
+  );
+
   let select_wrapper = document.createElement("div");
   select.style.display = "none";
   select_wrapper.innerHTML = `<div class="custom-select-wrapper">${template}</div>`;
@@ -27,12 +36,11 @@ document.querySelectorAll(".select-wrap").forEach(function (wrap) {
 });
 
 const triggers = document.querySelectorAll(".custom-select-trigger");
-triggers.forEach(t => t.addEventListener('click', (e) => {
-  e
-  .target
-  .closest(".custom-select")
-  .classList.toggle("opened");
-}))
+triggers.forEach((t) =>
+  t.addEventListener("click", (e) => {
+    e.target.closest(".custom-select").classList.toggle("opened");
+  })
+);
 
 document.querySelectorAll(".custom-option").forEach((option) => {
   option.addEventListener("click", function () {
@@ -45,19 +53,28 @@ document.querySelectorAll(".custom-option").forEach((option) => {
   });
 });
 
-
 $(function () {
   /* menu nav bar */
   $("#nav__toggle").on("click", function () {
     $(this).toggleClass("active");
     $("#nav__inner").toggleClass("active");
+    $("#mobile").toggleClass("active");
   });
+
+  $("#mobile__close").on("click", function () {
+    $("#mobile").removeClass("active");
+    $("#nav__toggle").removeClass("active");
+  });
+
   $(".nav__inner-cloes").on("click", function () {
-    $("#nav__inner").toggleClass("active");
+    $("#nav__inner").removeClass("active");
+    $("#nav__toggle").removeClass("active");
+
   });
   $(".search__icon").on("click", function () {
     $(".search__inner").toggleClass("active");
   });
+
   $(".popular__item").on("click", function () {
     removeActiveClass("popular__add__click");
     removeActiveClass("popular__add");
@@ -94,6 +111,7 @@ $(function () {
     $("#one").html(two);
   });
 });
+
 
 const items = document.querySelectorAll(".cloth__text");
 const content = document.querySelector("#cloth__content");
@@ -132,8 +150,8 @@ new Swiper(".mySwiper1", {
       slidesPerView: 4,
       // spaceBetween: 40,
     },
-    1130: {
-      slidesPerView: 3.8,
+    1200: {
+      slidesPerView: 3.3,
       spaceBetween: 20,
     },
     1000: {
@@ -174,7 +192,7 @@ new Swiper(".mySwiper2", {
       slidesPerView: 2.5,
       spaceBetween: 30,
     },
-  }, 
+  },
   navigation: {
     nextEl: ".my__slide__prev_clothes",
     prevEl: ".my__slide__next_clothes",
@@ -183,7 +201,7 @@ new Swiper(".mySwiper2", {
   },
 });
 
- new Swiper(".mySwiper3", {
+new Swiper(".mySwiper3", {
   slidesPerView: 3,
   // spaceBetween: 30,
   slidesPerGroup: 1,
