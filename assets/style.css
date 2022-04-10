@@ -637,6 +637,33 @@ select.select-wrap {
    margin-bottom: 20px;
 }
 
+.mobile__search {
+   margin-top: 11px;
+   display: inline-block;
+}
+
+.mobile__title {
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 23px;
+   text-transform: uppercase;
+   color: #2E7E7C;
+   margin-bottom: 10px;
+}
+
+.mobile__text {
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 128.5%;
+   color: #050505;
+   margin-bottom: 15px;
+   width: 70%;
+}
+
 /* search */
 
 .my-search {
@@ -812,6 +839,13 @@ form {
 /* swiper slide */
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
    background-color: #fff;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+   bottom: 0;
+}
+.swiper-pagination.swiper-pogi {
+   position: absolute;
+   /* bottom: 0; */
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -1193,14 +1227,14 @@ form {
 .photo {
    padding-top: 45px;
    width: 100%;
-   height: 710 px;
    position: relative;
 }
 
 .photo__bg {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+   /* object-fit: cover; */
+   display: block;
+   max-width: 100%;
+   height: auto;
 }
 
 .photo__group {
@@ -1415,6 +1449,9 @@ form {
 .property__box_action {
    display: none;
    margin-top: 50px;
+}
+.property__box.load {
+   display: none;
 }
 
 /* cloth */
