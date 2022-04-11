@@ -111,6 +111,11 @@ header {
 .section__intro {
    position: relative;
    background: linear-gradient(106.44deg, #155553 12.26%, #358C8A 88.92%);
+
+   z-index: 50;
+   width: 100%;
+   position: sticky;
+   top: 0;
 }
 
 /* select  */
@@ -623,6 +628,7 @@ select.select-wrap {
    opacity: 1;
    left: 0;
    visibility: visible;
+   z-index: 222;
 }
 
 .mobile__link {
@@ -840,9 +846,10 @@ form {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
    background-color: #fff;
 }
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-   bottom: 0;
-}
+
+/* .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+   bottom: 0;о
+} */
 .swiper-pagination.swiper-pogi {
    position: absolute;
    /* bottom: 0; */
@@ -1416,6 +1423,9 @@ form {
 }
 
 /* cards */
+.cards {
+   display: none;
+}
 
 
 /* property */
@@ -1450,6 +1460,7 @@ form {
    display: none;
    margin-top: 50px;
 }
+
 .property__box.load {
    display: none;
 }
@@ -1999,6 +2010,11 @@ reviews */
 
 .tabs__accordion {
    width: 25%;
+   height: 100%;
+   position: sticky;
+   top: 10%;
+   bottom: 50%;
+
 }
 
 .prodNav {
@@ -2052,7 +2068,7 @@ reviews */
 .prodMain {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: space-around;
    opacity: 0;
    visibility: hidden;
    color: #ffffff;
@@ -2064,6 +2080,7 @@ reviews */
 }
 
 .prod__main__item {
+   width: 30%;
    padding: 0;
    margin-bottom: 30PX;
 }
@@ -2138,7 +2155,10 @@ select {
    margin-right: 5px;
    transform: scale(1.5);
    border: 1px solid #fff;
+   position: relative;
 }
+
+
 
 .checkbox__inner {
    display: flex;
@@ -2161,18 +2181,43 @@ select {
 }
 
 /* pogination */
+.pagination {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
 .pagination ul {
-   width: 100%;
    display: flex;
    flex-wrap: wrap;
-   background: #fff;
+   background: transparent;
    padding: 8px;
    border-radius: 50px;
-   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pogination__btn {
+   width: 25%;
+   height: 45px;
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 128.5%;
+   text-transform: uppercase;
+   color: #145553;
+
+   background: #F4F7FB;
+   border: 1px solid #2E7E7C;
+   border-radius: 31px;
+   transition: .2s linear;
+}
+
+.pogination__btn:hover {
+   background-color: #2E7E7C;
+   color: #fff;
 }
 
 .pagination ul li {
-   color: #20B2AA;
    list-style: none;
    line-height: 45px;
    text-align: center;
@@ -2181,7 +2226,34 @@ select {
    cursor: pointer;
    user-select: none;
    transition: all 0.3s ease;
+   /* margin-left: 20px; */
+
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 142%;
+   color: #343434;
+   width: 32px;
+   height: 32px;
+   background: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
+
+.pagination li.active
+
+/* .pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover  */
+   {
+   border-radius: 50%;
+   border: 1px solid #2E7E7C;
+}
+
+/* 
 
 .pagination ul li.numb {
    list-style: none;
@@ -2210,13 +2282,8 @@ select {
    border-radius: 50px;
 }
 
-.pagination li.active,
-.pagination ul li.numb:hover,
-.pagination ul li:first-child:hover,
-.pagination ul li:last-child:hover {
-   color: #fff;
-   background: #20B2AA;
-}
+
+} */
 
 /* catalog__footer */
 .catalog__footer {
@@ -2276,11 +2343,27 @@ select {
    text-transform: uppercase;
    color: #fff;
    position: absolute;
-   top: 50%;
+      top: 50%;
    right: -5%;
    transform: translate(-50%, -50%);
    width: 40%;
 }
+
+.about__con__img {
+   height: 100%;
+}
+
+.about__con__img img {
+   height: 100%;
+}
+/* .about__con__text.left {
+   display: block;
+   position: relative;
+   top: 50%;
+   left: 0%;
+   transform: translate(-50%, -50%);
+   width: 40%;
+} */
 
 .about__con__group {
    position: absolute;
