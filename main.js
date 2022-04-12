@@ -59,7 +59,7 @@ $(function () {
     $(this).toggleClass("active");
     $("#nav__inner").toggleClass("active");
     $("#mobile").toggleClass("active");
-    $(".overlay").toggleClass("active");
+    // $(".overlay").toggleClass("active");
   });
 
   $("#mobile__close").on("click", function () {

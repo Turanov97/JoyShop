@@ -133,42 +133,46 @@ header {
    background: #F4F7FB;
    opacity: .3;
 }
+
 .ticker::after {
    top: 0;
 }
 
-.ticker::before  {
+.ticker::before {
    bottom: 0;
 }
 
 @-webkit-keyframes scroll {
    0% {
-       -webkit-transform: translate(0, 0);
-       transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
    }
+
    100% {
-       -webkit-transform: translate(-100%, 0);
-       transform: translate(-100%, 0)
+      -webkit-transform: translate(-100%, 0);
+      transform: translate(-100%, 0)
    }
 }
 
 @-moz-keyframes scroll {
    0% {
-       -moz-transform: translate(0, 0);
-       transform: translate(0, 0);
+      -moz-transform: translate(0, 0);
+      transform: translate(0, 0);
    }
+
    100% {
-       -moz-transform: translate(-100%, 0);
-       transform: translate(-100%, 0)
+      -moz-transform: translate(-100%, 0);
+      transform: translate(-100%, 0)
    }
 }
 
 @keyframes scroll {
    0% {
-       transform: translate(0, 0);
+      transform: translate(0, 0);
    }
+
    100% {
-       transform: translate(-100%, 0)
+      transform: translate(-100%, 0)
    }
 }
 
@@ -348,7 +352,8 @@ select.select-wrap {
 }
 
 .inntro__inner {
-   margin-top: 100px;
+   position: relative;
+   padding-top: 100px;
    display: flex;
    height: 518px;
    justify-content: center;
@@ -423,6 +428,41 @@ select.select-wrap {
    color: #2E7E7C !important;
 }
 
+.intro_slide_img-1 {
+   position: absolute;
+   z-index: 1;
+   bottom: 0;
+   left: 0;
+   width: 46%;
+}
+
+.intro_slide_img-3 {
+   position: absolute;
+   z-index: 1;
+   bottom: 0;
+   left: 0;
+   width: 56.5%;
+
+}
+
+.intro_slide_img-2 {
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   right: 0;
+   width: 35%;
+
+}
+
+/* intro_slide_3 */
+.intro_slide_3 {
+   display: flex;
+   flex-direction: column;
+   align-items: self-end;
+}
+.intro_slide_three_text {
+   width: 30%;
+}
 
 /* links */
 
@@ -442,6 +482,11 @@ select.select-wrap {
    margin-left: 43px;
    cursor: pointer;
    transition: .2s ease-in;
+}
+
+.link__item.active {
+   color: #83AEAD;
+
 }
 
 .link__item:hover {
