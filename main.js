@@ -59,17 +59,18 @@ $(function () {
     $(this).toggleClass("active");
     $("#nav__inner").toggleClass("active");
     $("#mobile").toggleClass("active");
+    $(".overlay").toggleClass("active");
   });
 
   $("#mobile__close").on("click", function () {
     $("#mobile").removeClass("active");
     $("#nav__toggle").removeClass("active");
+    $(".overlay").removeClass("active");
   });
 
   $(".nav__inner-cloes").on("click", function () {
     $("#nav__inner").removeClass("active");
     $("#nav__toggle").removeClass("active");
-
   });
   $(".search__icon").on("click", function () {
     $(".search__inner").toggleClass("active");
@@ -82,6 +83,41 @@ $(function () {
     $(this).find(".popular__add").toggleClass("active");
   });
 
+  $("#filter__action").on("click", function () {
+    $(".filter__menu").addClass("active");
+    $(".overlay").toggleClass("active");
+  });
+  $(".filter__cloes").on("click", function () {
+    $(".filter__menu").removeClass("active");
+    $(".overlay").removeClass("active");
+  });
+
+  /*  */
+  // let fliterMenu = document.querySelector(".filter__menu");
+  // document.addEventListener("click", (e) => {
+  //   const click = e.composedPath().includes(fliterMenu);
+  //   if (!click) {
+  //     fliterMenu.style.display = 'none'
+  //   }
+  // });
+
+  /* clothe on click window */
+  // let btnCategories = $('#filter__action')
+  // let categories = $('.filter__menu')
+  // let overlay = $('.overlay')
+
+  // $(document).mouseup(function (e) {
+  //   if (
+  //     !btnCategories.is(e.target) &&
+  //     btnCategories.has(e.target).length === 0 &&
+  //     !categories.is(e.target) &&
+  //     categories.has(e.target).length === 0
+  //   ) {
+  //     categories.fadeOut();
+  //   }
+  // });
+
+  /*  */
   // $("#nav__box").on("click", function () {
   //   $(".nav__box__inner").toggleClass("active");
   // });
@@ -111,7 +147,6 @@ $(function () {
     $("#one").html(two);
   });
 });
-
 
 const items = document.querySelectorAll(".cloth__text");
 const content = document.querySelector("#cloth__content");
@@ -188,16 +223,14 @@ new Swiper(".mySwiper2", {
       slidesPerView: 1.9,
       spaceBetween: 30,
     },
-    836: {
-      slidesPerView: 2.5,
+    1024: {
+      slidesPerView: 1.6,
       spaceBetween: 30,
     },
   },
   navigation: {
     nextEl: ".my__slide__prev_clothes",
     prevEl: ".my__slide__next_clothes",
-    // nextEl: ".swiper-button-next",
-    // prevEl: ".swiper-button-prev",
   },
 });
 

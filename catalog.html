@@ -39,6 +39,8 @@
     <link rel="stylesheet" href="./assets/media.css" />
   </head>
   <body>
+    <div class="overlay"></div>
+
     <header>
       <div class="container">
         <div class="header">
@@ -241,6 +243,9 @@
     <section class="container">
       <div class="tabs">
         <div class="prodNav">
+          <a id="filter__action" class="filter__action" href="#"
+            >Фильтр продукции</a
+          >
           <li id="pTab1" class="ptItem active">Носки</li>
           <li id="pTab2" class="ptItem">Брюки</li>
           <li id="pTab3" class="ptItem">Блузки</li>
@@ -248,7 +253,7 @@
           <li id="pTab3" class="ptItem">Бредовая промо продукция</li>
           <li id="pTab2" class="ptItem">Школьная форма</li>
         </div>
-        <div class="select-wrap ">
+        <div class="select-wrap">
           <select
             class="custom-select"
             id="select"
@@ -260,6 +265,200 @@
             <option value="option3">От низко цены</option>
             <option value="option4">От высокой цены</option>
           </select>
+        </div>
+      </div>
+      <div class="filter__menu">
+        <div class="filter__cloes"> <i class="fa-solid fa-xmark"></i></div>
+        <div class="accordion tabs__accordion filter__accordion">
+          <div class="accordion__collapsible checkbox__collapsible">
+            <div class="collapsible__header checkbox__header">
+              <div class="checkbox__text">
+                <input type="checkbox" id="scales" name="scales" />
+                <label for="scales">Одежда</label>
+              </div>
+            </div>
+            <div class="collapsible__content">
+              <div class="collapsible__inner checkbox__inner">
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" checked />
+                  <label for="scales">Джинсы </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Рубашки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Брюки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Куртка </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Пиджаки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="" name="" />
+                  <label for="">Джемперы </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__collapsible checkbox__collapsible">
+            <div class="collapsible__header checkbox__header">
+              <div class="checkbox__text">
+                <input type="checkbox" id="scales" name="scales" />
+                <label for="scales">Одежда</label>
+              </div>
+            </div>
+            <div class="collapsible__content">
+              <div class="collapsible__inner checkbox__inner">
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" checked />
+                  <label for="scales">Джинсы </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Рубашки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Брюки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Куртка </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Пиджаки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="" name="" />
+                  <label for="">Джемперы </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__collapsible checkbox__collapsible">
+            <div class="collapsible__header checkbox__header">
+              <div class="checkbox__text">
+                <input type="checkbox" id="scales" name="scales" />
+                <label for="scales">Одежда</label>
+              </div>
+            </div>
+            <div class="collapsible__content">
+              <div class="collapsible__inner checkbox__inner">
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" checked />
+                  <label for="scales">Джинсы </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Рубашки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Брюки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Куртка </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Пиджаки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="" name="" />
+                  <label for="">Джемперы </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__collapsible checkbox__collapsible">
+            <div class="collapsible__header checkbox__header">
+              <div class="checkbox__text">
+                <input type="checkbox" id="" name="Промо продукция" />
+                <label for="">Промо продукция</label>
+                <span class="checkmark"></span>
+              </div>
+            </div>
+            <div class="collapsible__content">
+              <div class="collapsible__inner checkbox__inner">
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" checked />
+                  <label for="scales">Джинсы </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Рубашки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Брюки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Куртка </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Пиджаки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="" name="" />
+                  <label for="">Джемперы </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="" name="" />
+                  <label for="">Брюки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="" name="" />
+                  <label for="">Джинсы </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__collapsible checkbox__collapsible">
+            <div class="collapsible__header checkbox__header">
+              <div class="checkbox__text">
+                <input type="checkbox" id="" name="Текстиль" />
+                <label for="">Текстиль</label>
+              </div>
+            </div>
+            <div class="collapsible__content">
+              <div class="collapsible__inner checkbox__inner">
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" checked />
+                  <label for="scales">Джинсы </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Рубашки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Брюки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Куртка </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Пиджаки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="" name="" />
+                  <label for="">Джемперы </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="tabs__menu">
@@ -381,12 +580,84 @@
               </div>
             </div>
           </div>
+          <div class="accordion__collapsible checkbox__collapsible">
+            <div class="collapsible__header checkbox__header">
+              <div class="checkbox__text">
+                <input type="checkbox" id="scales" name="scales" />
+                <label for="scales">Корпоративная униформа</label>
+              </div>
+            </div>
+            <div class="collapsible__content">
+              <div class="collapsible__inner checkbox__inner">
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" checked />
+                  <label for="scales">Джинсы </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Рубашки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Брюки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Куртка </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Пиджаки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="" name="" />
+                  <label for="">Джемперы </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__collapsible checkbox__collapsible">
+            <div class="collapsible__header checkbox__header">
+              <div class="checkbox__text">
+                <input type="checkbox" id="scales" name="scales" />
+                <label for="scales">Одежда</label>
+              </div>
+            </div>
+            <div class="collapsible__content">
+              <div class="collapsible__inner checkbox__inner">
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" checked />
+                  <label for="scales">Джинсы </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Рубашки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Брюки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Куртка </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="scales" name="" />
+                  <label for="scales">Пиджаки </label>
+                </div>
+                <div class="checkbox__text">
+                  <input type="checkbox" id="" name="" />
+                  <label for="">Джемперы </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="prodBody">
           <div class="prodMain active" id="pTab1C">
             <div class="popular__item prod__main__item">
               <img
-                src="./assets/images/popular/1.png"
+                src="./assets/images/about/1.png"
                 alt=""
                 class="popular__img"
               />
@@ -410,7 +681,11 @@
                 <div class="popular__add__text">10 шт.</div>
                 <div class="popular__add__img">
                   <img src="./assets/images/icon/shoping.svg" alt="" />
-                  <img src="./assets/images/icon/Line.svg" alt="" />
+                  <img
+                    class="popular__img_arrow"
+                    src="./assets/images/icon/Line.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -440,7 +715,11 @@
                 <div class="popular__add__text">10 шт.</div>
                 <div class="popular__add__img">
                   <img src="./assets/images/icon/shoping.svg" alt="" />
-                  <img src="./assets/images/icon/Line.svg" alt="" />
+                  <img
+                    class="popular__img_arrow"
+                    src="./assets/images/icon/Line.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -470,7 +749,11 @@
                 <div class="popular__add__text">10 шт.</div>
                 <div class="popular__add__img">
                   <img src="./assets/images/icon/shoping.svg" alt="" />
-                  <img src="./assets/images/icon/Line.svg" alt="" />
+                  <img
+                    class="popular__img_arrow"
+                    src="./assets/images/icon/Line.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -500,7 +783,11 @@
                 <div class="popular__add__text">10 шт.</div>
                 <div class="popular__add__img">
                   <img src="./assets/images/icon/shoping.svg" alt="" />
-                  <img src="./assets/images/icon/Line.svg" alt="" />
+                  <img
+                    class="popular__img_arrow"
+                    src="./assets/images/icon/Line.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -530,7 +817,11 @@
                 <div class="popular__add__text">10 шт.</div>
                 <div class="popular__add__img">
                   <img src="./assets/images/icon/shoping.svg" alt="" />
-                  <img src="./assets/images/icon/Line.svg" alt="" />
+                  <img
+                    class="popular__img_arrow"
+                    src="./assets/images/icon/Line.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -560,7 +851,11 @@
                 <div class="popular__add__text">10 шт.</div>
                 <div class="popular__add__img">
                   <img src="./assets/images/icon/shoping.svg" alt="" />
-                  <img src="./assets/images/icon/Line.svg" alt="" />
+                  <img
+                    class="popular__img_arrow"
+                    src="./assets/images/icon/Line.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -590,7 +885,11 @@
                 <div class="popular__add__text">10 шт.</div>
                 <div class="popular__add__img">
                   <img src="./assets/images/icon/shoping.svg" alt="" />
-                  <img src="./assets/images/icon/Line.svg" alt="" />
+                  <img
+                    class="popular__img_arrow"
+                    src="./assets/images/icon/Line.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -620,7 +919,11 @@
                 <div class="popular__add__text">10 шт.</div>
                 <div class="popular__add__img">
                   <img src="./assets/images/icon/shoping.svg" alt="" />
-                  <img src="./assets/images/icon/Line.svg" alt="" />
+                  <img
+                    class="popular__img_arrow"
+                    src="./assets/images/icon/Line.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -650,7 +953,11 @@
                 <div class="popular__add__text">10 шт.</div>
                 <div class="popular__add__img">
                   <img src="./assets/images/icon/shoping.svg" alt="" />
-                  <img src="./assets/images/icon/Line.svg" alt="" />
+                  <img
+                    class="popular__img_arrow"
+                    src="./assets/images/icon/Line.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
