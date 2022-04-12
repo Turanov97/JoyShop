@@ -197,7 +197,7 @@ header {
    position: relative;
    background: linear-gradient(106.44deg, #155553 12.26%, #358C8A 88.92%);
 
-   z-index: 50;
+   z-index: 49;
    width: 100%;
    position: sticky;
    top: 0;
@@ -218,7 +218,7 @@ select.select-wrap {
 }
 
 .custom-select-wrapper {
-   z-index: 60;
+   z-index: 50;
    position: relative;
    display: inline-block;
    user-select: none;
@@ -355,7 +355,7 @@ select.select-wrap {
    position: relative;
    padding-top: 100px;
    display: flex;
-   height: 518px;
+   height: 618px;
    justify-content: center;
 }
 
@@ -431,17 +431,17 @@ select.select-wrap {
 .intro_slide_img-1 {
    position: absolute;
    z-index: 1;
-   bottom: 0;
+   bottom: -2%;
    left: 0;
-   width: 46%;
+   width: 57%;
 }
 
 .intro_slide_img-3 {
    position: absolute;
    z-index: 1;
-   bottom: 0;
+   bottom: -2%;
    left: 0;
-   width: 56.5%;
+   width: 69.5%;
 
 }
 
@@ -517,8 +517,8 @@ select.select-wrap {
 .nav__inner {
    /* transform: translateY(-100%); */
    width: 100%;
-   position: absolute;
-   z-index: 3;
+   position: fixed;
+   z-index: 55;
    top: 0%;
    left: 0;
    transition: all .3s ease-in;
@@ -538,14 +538,14 @@ select.select-wrap {
    position: absolute;
    top: 23px;
    right: 0;
-   z-index: 2;
+   z-index: 552;
    color: #2E7E7C;
    font-size: 25px;
    cursor: pointer;
 }
 
 .nav__item {
-   width: 20%;
+   width: 22%;
    margin-right: 20px;
    margin-bottom: 15px;
 }
@@ -569,8 +569,9 @@ select.select-wrap {
 
 .nav__inner.active {
    /* transform: translateY(0%); */
-   top: 100%;
+   top: 6.5%;
    opacity: 1;
+   z-index: 70;
    visibility: visible;
    background-color: #fff;
 }
@@ -2280,7 +2281,7 @@ reviews */
 .overlay {
    opacity: 0;
    position: fixed;
-   z-index: 70;
+   z-index: 50;
    top: 0;
    left: 0;
    width: 100%;

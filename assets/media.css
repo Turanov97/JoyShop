@@ -828,7 +828,7 @@
 
    .intro__text {
       text-align: center;
-      font-size: 30px;
+      font-size: 26px;
       line-height: 1.4;
    }
 
@@ -926,7 +926,7 @@
       font-size: 35px;
       width: 100%;
       margin-right: 0;
-      text-align: start;
+      text-align: center;
    }
 
    /* cards */
@@ -1291,6 +1291,10 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+   .about__title {
+      text-align: center;
+   }
+   
    .about__con__group {
       display: none;
    }
@@ -1476,6 +1480,14 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+   .footer  {
+      margin-top: 100px;
+   }
+   .filter__action  {
+      width: 90%;
+      padding: 6px 0;
+      font-size: 14px;
+   }
    .popular__img_arrow {
       display: none;
    }

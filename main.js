@@ -59,8 +59,9 @@ $(function () {
     $(this).toggleClass("active");
     $("#nav__inner").toggleClass("active");
     $("#mobile").toggleClass("active");
-    // $(".overlay").toggleClass("active");
+    // $(".overlay").toggigleClass("active");
   });
+  
 
   $("#mobile__close").on("click", function () {
     $("#mobile").removeClass("active");
