@@ -339,11 +339,40 @@ select.select-wrap {
 }
 
 /* select sort */
+.sort {
+   z-index: 5;
+}
 
-.custom-select-wrapper.sort {
-   padding: 15px 0;
-} 
+.sort .custom-select-trigger {
+   z-index: 5;
+   padding: 15px 59px 14px 36px;
+   border: 1px solid rgba(46, 126, 124, 0.25);
+   color: #000;
+}
 
+.sort .custom-select-trigger:hover {
+   color: #fff;
+}
+
+.sort .custom-select-trigger:after {
+   right: 30px;
+   color: #000;
+}
+
+.sort .custom-option {
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 15px;
+   color: #898989;
+}
+.sort .custom-option:hover {
+   color: #000;
+   background: transparent;
+}
+.sort .custom-select.opened .custom-options {
+   margin-top: 10px;
+}
 /* intro */
 .section__slider {
    background: linear-gradient(106.44deg, #155553 12.26%, #358C8A 88.92%);
@@ -854,9 +883,11 @@ select.select-wrap {
    color: #2E7E7C;
    margin-bottom: 10px;
 }
+
 .nav__box__inner a:hover {
    color: #20B2AA;
 }
+
 /* mobile menu */
 
 .mobile__menu {
@@ -971,6 +1002,7 @@ select.select-wrap {
    opacity: 1;
    visibility: visible;
 }
+
 .search__box_form {
    width: 100%;
 }
@@ -996,6 +1028,7 @@ select.select-wrap {
    border: none;
    border-bottom: 2px solid #A0A0A0;
 }
+
 .searchbox input::placeholder {
    color: #2E7E7C;
 }
@@ -1126,8 +1159,9 @@ form {
 }
 
 .swiper-backface-hidden .swiper-slide {
-   overflow: hidden  ;
+   overflow: hidden;
 }
+
 /* .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
    bottom: 0;о
 } */
@@ -2498,16 +2532,27 @@ select {
    font-family: 'Inter';
    font-style: italic;
    font-weight: 400 !important;
-   font-size: 18px;
+   font-size: 15px;
    line-height: 142%;
    color: rgba(20, 85, 83, 0.75);
 }
 
+.checkbox__text {
+   display: flex;
+   align-items: center;
+   width: 80%;
+}
+
 .checkbox__text input[type="checkbox"] {
-   margin-right: 5px;
+   margin-right: 12px;
    transform: scale(1.5);
    border: 1px solid #fff;
    position: relative;
+   ;
+}
+
+.checkbox__header .checkbox__text label {
+   color: #000;
 }
 
 
@@ -2519,7 +2564,7 @@ select {
 }
 
 .checkbox__header {
-   padding: 15px 0px 15px 25px;
+   padding: 15px 10px 15px 25px;
    font-family: 'Inter';
    font-style: italic;
    font-weight: 400;
