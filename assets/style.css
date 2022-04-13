@@ -338,6 +338,12 @@ select.select-wrap {
    color: #2E7E7C;
 }
 
+/* select sort */
+
+.custom-select-wrapper.sort {
+   padding: 15px 0;
+} 
+
 /* intro */
 .section__slider {
    background: linear-gradient(106.44deg, #155553 12.26%, #358C8A 88.92%);
