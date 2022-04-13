@@ -1258,6 +1258,27 @@
    .about__con__title {
       font-size: 40px;
    }
+
+   .about__con__group-top {
+      width: 20%;
+   }
+
+
+   /* SLDIER -3 ABOUT PAGE */
+   .about__con__text.slide-3 {
+      font-size: 30px;
+      width: 45%;
+      top: 49%;
+      right: -12%;
+   }
+
+   .about__con__group {
+      width: 57%;
+      left: 49%;
+   }
+   .about__con__group-top {
+      width: 17%;
+  }
 }
 
 /* Portrait tablets and small desktops */
@@ -1335,6 +1356,24 @@
 
    .blog__img img {
       height: 215px;
+   }
+
+   /* slide 3 */
+   .about__con__text.slide-2 {
+      left: 0;
+      width: 70%;
+   }
+   .about__con__text.slide-3 {
+      width: 100%;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+   }
+   .about__con__text.slide-4 {
+      width: 60%;
+      left: 0;
+      top: 0;
+      transform: translate(0, 0);
    }
 }
 
@@ -1606,6 +1645,7 @@
       margin-top: 45%;
    }
 }
+
 /* home page sliders */
 @media (min-width: 200px) and (max-width: 1440px) {
    .intro_slide_img-1 {
@@ -1640,6 +1680,7 @@
    .intro_slide_img-1.slide-4-1 {
       height: 103%;
    }
+
    .intro_slide_img-3.slide-4-3 {
       left: 7%;
    }
@@ -1647,6 +1688,4 @@
 
 /* home page sliders */
 
-@media  (max-width: 1199px) {
-   
-}
+@media (max-width: 1199px) {}

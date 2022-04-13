@@ -59,7 +59,7 @@ $(function () {
     $(this).toggleClass("active");
     $("#nav__inner").toggleClass("active");
     $("#mobile").toggleClass("active");
-    // $(".overlay").toggigleClass("active");
+    $(".overlay").addClass("active");
   });
   
 
@@ -71,6 +71,7 @@ $(function () {
 
   $(".nav__inner-cloes").on("click", function () {
     $("#nav__inner").removeClass("active");
+    $(".overlay").removeClass("active");
     $("#nav__toggle").removeClass("active");
   });
   $(".search__icon").on("click", function () {
@@ -291,15 +292,15 @@ function triggercross(val) {
   x.style.display = "block";
 }
 
-function close1() {
-  // document.getElementById("demo").innerHTML = "You wrote: " + val;
-  var x = document.getElementById("closeid");
-  if (x.style.display == "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+// function close1() {
+//   // document.getElementById("demo").innerHTML = "You wrote: " + val;
+//   var x = document.getElementById("closeid");
+//   if (x.style.display == "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
 
 /* Tabs */
 
