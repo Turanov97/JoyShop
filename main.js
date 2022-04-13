@@ -11,11 +11,11 @@ const getSelectTemplate = (classes, placeholder, content) => `
 const getOptionTemplate = (value, text) =>
   `<span class="custom-option" data-value="${value}">${text}</span> `;
 
-document.querySelectorAll(".select-wrap").forEach(function (wrap) {
-  let select = wrap.querySelector(".custom-select");
-  let classes = select.getAttribute("class");
-  let id = select.getAttribute("id");
-  let name = select.getAttribute("name");
+document.querySelectorAll(".select-wrap").forEach((wrap) => {
+  const select = wrap.querySelector(".custom-select");
+  const classes = select.getAttribute("class");
+  const additional = wrap.dataset.additional || "";
+  console.log(additional);
 
   const options = select.querySelectorAll("option");
   let content = Array.from(options)
@@ -31,7 +31,7 @@ document.querySelectorAll(".select-wrap").forEach(function (wrap) {
 
   let select_wrapper = document.createElement("div");
   select.style.display = "none";
-  select_wrapper.innerHTML = `<div class="custom-select-wrapper">${template}</div>`;
+  select_wrapper.innerHTML = `<div class="custom-select-wrapper ${additional}">${template}</div>`;
   wrap.appendChild(select_wrapper);
 });
 
@@ -61,7 +61,6 @@ $(function () {
     $("#mobile").toggleClass("active");
     $(".overlay").addClass("active");
   });
-  
 
   $("#mobile__close").on("click", function () {
     $("#mobile").removeClass("active");
@@ -102,6 +101,17 @@ $(function () {
   //     fliterMenu.style.display = 'none'
   //   }
   // });
+
+  const overlay = document.querySelector(".overlay");
+
+  document.addEventListener("click", (e) => {
+    if (e.target == overlay) {
+      $("#nav__toggle").removeClass("active");
+      $("#nav__inner").removeClass("active");
+      $("#mobile").removeClass("active");
+      $(".overlay").removeClass("active");
+    }
+  });
 
   /* clothe on click window */
   // let btnCategories = $('#filter__action')

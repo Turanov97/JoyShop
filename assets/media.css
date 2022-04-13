@@ -1276,9 +1276,10 @@
       width: 57%;
       left: 49%;
    }
+
    .about__con__group-top {
       width: 17%;
-  }
+   }
 }
 
 /* Portrait tablets and small desktops */
@@ -1363,12 +1364,14 @@
       left: 0;
       width: 70%;
    }
+
    .about__con__text.slide-3 {
       width: 100%;
       top: 0;
       left: 0;
       transform: translate(0, 0);
    }
+
    .about__con__text.slide-4 {
       width: 60%;
       left: 0;
@@ -1688,4 +1691,125 @@
 
 /* home page sliders */
 
-@media (max-width: 1199px) {}
+@media (max-width: 1351px) {
+
+   /* sldie  home page slide -2 */
+   .intro_slide_img-1.slide-2-1 {
+      width: 70%;
+      right: -8%;
+      z-index: 3;
+   }
+
+   .intro_slide_img-3.slide-2-3 {
+      display: none;
+   }
+
+   .intro_slide_three_title {
+      width: 90%;
+   }
+
+   /* slider 3 */
+
+   .intro_slide_img-3 {
+      display: none;
+   }
+
+   .intro_slide_img-1 {
+      width: 70%;
+      left: -10%;
+   }
+
+   /* .intro_slide_img-1.slide-4-1 */
+   .intro_slide_img-1.slide-4-1 {
+      right: -17%;
+      width: 70%;
+   }
+
+   .intro__content.intro_slide_2 {
+      margin-left: 80px;
+   }
+
+   .intro_slide_three_title.four {
+      width: 100%;
+   }
+
+   .intro_slide_three_text.four {
+      width: 64%;
+   }
+
+   .intro_slide_img-2.slide-4-2 {
+      width: 35%;
+   }
+
+   .intro_slide_three_btns.four {
+      top: 65%;
+   }
+
+   /* intro_slide_three_text sldie 3 */
+   .intro_slide_three_text {
+      width: 45%;
+   }
+
+   /* intro_slide_img-2.slide-2-2  */
+   .intro_slide_img-2.slide-2-2 {
+      width: 35%;
+   }
+
+}
+
+@media (max-width: 1200px) {
+   .intro_slide_img-1.slide-2-1 {
+      width: 72%;
+   }
+
+   .intro_slide_img-1 {
+      width: 72%;
+   }
+}
+
+@media (max-width: 850px) {
+
+   /* sldier -2  */
+   .intro_slide_img-1.slide-2-1 {
+      width: 61%;
+      bottom: -10%;
+   }
+
+   .intro_slide_three_text.two {
+      width: 73%;
+   }
+   .intro_slide_three_title  {
+      width: 100%;
+   }
+
+   /* slider -3  */
+   .intro_slide_img-1 {
+      bottom: -9%;
+      width: 60%;
+   }
+   .intro_slide_3 {
+      margin-right: 60px;
+   }
+   .intro_slide_three_text {
+      width: 70%;
+   }
+
+   /* intro_slide_img-1.slide-4-1  */
+   .intro_slide_img-1.slide-4-1  {
+      bottom: -9%;
+      height: 100%;
+   }
+   .intro_slide_three_title  {
+      font-size: 35px;
+   }
+   .intro_slide_three_btns.four {
+      left: 10%;
+   }
+   .intro_slide_img-1.slide-4-1 {
+      width: 85%;
+      right: -28%;
+   }
+   .intro_slide_three_text  {
+      font-size: 16px;
+   }
+}
