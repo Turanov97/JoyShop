@@ -1672,11 +1672,7 @@
    }
 }
 
-@media (max-width: 350px) {
-   .tabs {
-      flex-direction: column-reverse;
-   }
-}
+
 
 /* home page sliders */
 @media (min-width: 200px) and (max-width: 1440px) {
@@ -1945,5 +1941,12 @@
 
    .intro_slide_three_btn {
       font-size: 15px;
+   }
+}
+
+@media (min-width: 200px) and (max-width: 400px) {
+   .tabs {
+      display: flex;
+      flex-direction: column-reverse !important;
    }
 }
