@@ -403,6 +403,7 @@
    .product__blog-respon {
       flex-direction: column;
    }
+   
 }
 
 @media only screen and (max-width: 836px) {
@@ -1208,6 +1209,10 @@
       width: 33%;
    }
 
+   .about__con__group.slide-3 {
+      width: 50%;
+   }
+
    .about__con__text {
       font-size: 40px;
    }
@@ -1595,5 +1600,18 @@
 
    .page_blog_content {
       margin-top: 45%;
+   }
+}
+
+/* home page sliders */
+@media (max-width: 1440px) {
+   .intro_slide_img-1  {
+      width: 60%;
+   }
+   .intro_slide_img-3  {
+      width: 73.5%;
+   }
+   .intro_slide_three_title  {
+      width: 61%;
    }
 }
