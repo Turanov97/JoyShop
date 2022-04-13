@@ -403,7 +403,7 @@
    .product__blog-respon {
       flex-direction: column;
    }
-   
+
 }
 
 @media only screen and (max-width: 836px) {
@@ -790,12 +790,14 @@
 /* @media only screen and (max-width: 436px) */
 
 @media(max-width: 436px) {
-   .popular  {
+   .popular {
       margin-top: 30px;
    }
-   .photo  {
+
+   .photo {
       padding-top: 30px;
    }
+
    .container {
       padding: 0px 25px;
    }
@@ -1299,7 +1301,7 @@
    .about__title {
       text-align: center;
    }
-   
+
    .about__con__group {
       display: none;
    }
@@ -1485,14 +1487,16 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-   .footer  {
+   .footer {
       margin-top: 100px;
    }
-   .filter__action  {
+
+   .filter__action {
       width: 90%;
       padding: 6px 0;
       font-size: 14px;
    }
+
    .popular__img_arrow {
       display: none;
    }
@@ -1602,16 +1606,47 @@
       margin-top: 45%;
    }
 }
-
 /* home page sliders */
-@media (max-width: 1440px) {
-   .intro_slide_img-1  {
+@media (min-width: 200px) and (max-width: 1440px) {
+   .intro_slide_img-1 {
       width: 60%;
    }
-   .intro_slide_img-3  {
+
+   .intro_slide_img-3 {
       width: 73.5%;
    }
-   .intro_slide_three_title  {
+
+   .intro_slide_three_title {
       width: 61%;
    }
+
+   /* home page slide -2 */
+   .intro_slide_img-1.slide-2-1 {
+      width: 62%;
+      right: 0%;
+   }
+
+   /* home page slide -3  */
+   .intro_slide_img-1 {
+      width: 62%;
+   }
+
+   .intro_slide_img-3 {
+      left: -8%;
+      width: 78.5%;
+   }
+
+   /* home page slide -4  */
+   .intro_slide_img-1.slide-4-1 {
+      height: 103%;
+   }
+   .intro_slide_img-3.slide-4-3 {
+      left: 7%;
+   }
+}
+
+/* home page sliders */
+
+@media  (max-width: 1199px) {
+   
 }

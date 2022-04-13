@@ -1241,7 +1241,7 @@ form {
    position: relative;
 }
 
-.about__img {
+.about__img img {
    position: absolute;
    left: -20%;
    top: -16%;
