@@ -648,6 +648,11 @@
    }
 
 }
+@media (max-width: 1051px) {
+   .link__item {
+      margin-left: 20px;
+   }
+}
 
 @media(max-width: 1067px) {
 

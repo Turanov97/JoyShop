@@ -1089,13 +1089,13 @@ select.select-wrap {
    visibility: hidden;
    background-color: #fff;
    transition: all .2s linear;
-}
-
-.search__inner.active {
-   display: block;
    display: flex;
    justify-content: center;
    align-items: center;
+
+}
+
+.search__inner.active {
    opacity: 1;
    visibility: visible;
 }
@@ -1546,6 +1546,36 @@ form {
    margin: 10px;
 }
 
+
+/* collapsible__header menu */
+
+.collapsible__header.menu {
+   padding: 8px 0;
+
+   font-family: 'Inter' !important;
+   font-size: 15px;
+   line-height: 128.5%;
+   color: #2E7E7C;
+   text-transform: none;
+}
+
+.collapsible__header.menu::after {
+   font-family: 'Prata';
+   margin-left: 15px;
+}
+
+.menu__text {
+   margin: 0 !important;
+   margin-bottom: 6px !important; 
+
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 150%;
+   color: rgba(0, 0, 0, 0.7);
+
+}
 
 /* Price */
 
@@ -2259,6 +2289,14 @@ reviews */
 .contact__con {
    padding: 58px 0;
    background: linear-gradient(106.44deg, #155553 12.26%, #358C8A 88.92%);
+   position: relative;
+}
+
+.contact__bg {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   z-index: 1;
 }
 
 .contact__con__inner {
@@ -2408,6 +2446,9 @@ reviews */
 
 .contact__maps {
    width: 54%;
+}
+.iframe {
+   width: 100%;
 }
 
 
@@ -2583,12 +2624,12 @@ reviews */
    width: 80%;
    padding: 18px 0;
 
-   margin: 70px auto 0 ;
+   margin: 70px auto 0;
 
    background: #2E7E7C;
    border-radius: 36px;
    border: 1px solid #2E7E7C;
-   transition:  .2s linear;
+   transition: .2s linear;
 }
 
 .firlter__btn_action:hover {

@@ -86,6 +86,10 @@ $(function () {
     $(".search__inner").toggleClass("active");
   });
 
+  $(".fa-times").on("click", function () {
+    $(".search__inner").removeClass("active");
+  });
+
   $(".popular__item").on("click", function () {
     removeActiveClass("popular__add__click");
     removeActiveClass("popular__add");
