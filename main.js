@@ -1,3 +1,11 @@
+/* preloder */
+
+window.onload = function () {
+  window.setTimeout(function () {
+    document.querySelector("#preloader").style.display = "none";
+  }, 500);
+}
+
 /* select======== */
 const getSelectTemplate = (classes, placeholder, content) => `
     <div class="${classes}">
