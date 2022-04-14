@@ -610,7 +610,7 @@
    }
 }
 
-@media(max-width: 1300px) {
+@media(max-width: 1380px) {
    .link__item {
       font-size: 12px;
       margin-left: 28px;
@@ -2213,4 +2213,13 @@
    .about__con__text.slide-3 {
       font-size: 22px;
    }
+   .sort .custom-select-trigger {
+      margin-bottom: 20px;
+      padding: 13px 78px 13px 55px;
+   }
+
+   .sort .custom-select.opened .custom-options {
+      margin-top: 0;
+   }
+   
 }

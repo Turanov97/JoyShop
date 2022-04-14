@@ -119,6 +119,7 @@ $(function () {
       $("#nav__inner").removeClass("active");
       $("#mobile").removeClass("active");
       $(".overlay").removeClass("active");
+      $(".filter__menu").removeClass("active");
     }
   });
 
