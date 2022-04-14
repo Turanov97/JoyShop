@@ -1027,6 +1027,7 @@ select.select-wrap {
    left: 0;
    visibility: visible;
    z-index: 222;
+   overflow: scroll;
 }
 
 .mobile__link {
@@ -1126,7 +1127,7 @@ select.select-wrap {
 }
 
 .searchbox input::placeholder {
-   color: #2E7E7C;
+   color: rgba(26, 94, 92, 0.35);
 }
 
 form {
@@ -2530,6 +2531,12 @@ reviews */
    margin-bottom: 35px;
 }
 
+.filter__accordion {
+   height: auto;
+   position: relative;
+   top: 0;
+}
+
 .filter__menu {
    opacity: 0;
    visibility: hidden;
@@ -2561,9 +2568,57 @@ reviews */
    font-size: 25px;
    color: #2E7E7C;
 }
-/* .reset__filter {
 
-} */
+.firlter__btn_action {
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 128.5%;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+
+   display: inline-block;
+   width: 80%;
+   padding: 18px 0;
+
+   margin: 70px auto 0 ;
+
+   background: #2E7E7C;
+   border-radius: 36px;
+   border: 1px solid #2E7E7C;
+   transition:  .2s linear;
+}
+
+.firlter__btn_action:hover {
+   background: transparent;
+   color: #2E7E7C;
+}
+
+.reset__filter {
+   font-family: 'Inter';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 128.5%;
+   text-transform: uppercase;
+   color: #000000;
+   display: flex;
+   align-items: center;
+}
+
+.reset__filter img {
+   margin-left: 10px;
+}
+
+.reset__filter.mobile {
+   justify-content: end;
+   margin-top: 50px;
+   margin-right: 30px;
+
+
+}
 
 .overlay {
    opacity: 0;

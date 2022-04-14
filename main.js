@@ -123,6 +123,15 @@ $(function () {
     }
   });
 
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      $("#nav__toggle").removeClass("active");
+      $("#nav__inner").removeClass("active");
+      $(".overlay").removeClass("active");
+      $(".search__inner").removeClass("active");
+    }
+  });
+
   /* clothe on click window */
   // let btnCategories = $('#filter__action')
   // let categories = $('.filter__menu')
@@ -180,9 +189,6 @@ items.forEach((texts) =>
     e.target.innerText = temp;
   })
 );
-
-
-
 
 // let search = document.querySelector('.search__inner')
 // window.onclick = function(event) {

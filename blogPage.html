@@ -145,22 +145,31 @@
         </div>
         <div class="search__inner">
           <div class="searchbox animated zoomIn">
-            <form method="get">
+            <form class="search__box_form" method="get">
               <input
                 oninput="triggercross(this.value)"
                 type="text"
-                placeholder="search"
+                placeholder="Поиск"
                 id="search"
                 name="search"
                 class="search"
-              /><i class="fas fa-search"></i>
+              />
+              <img
+                class="fa-search"
+                src="./assets/images/icon/fi_zoom-out.svg"
+                alt=""
+              />
               <button
                 onclick="close1()"
                 id="closeid"
                 type="reset"
                 class="close"
               >
-                <i class="fas fa-times"></i>
+                <img
+                  class="fa-times"
+                  src="./assets/images/icon/xmark.svg"
+                  alt=""
+                />
                 <p id="demo"></p>
               </button>
             </form>
