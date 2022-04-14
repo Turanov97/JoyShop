@@ -1949,4 +1949,7 @@
       display: flex;
       flex-direction: column-reverse !important;
    }
+   .about__con__text.slide-3 {
+      font-size: 22px;
+   }
 }
