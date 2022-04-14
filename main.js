@@ -2,9 +2,10 @@
 
 window.onload = function () {
   window.setTimeout(function () {
-    document.querySelector("#preloader").style.display = "none";
+    const preLoader = document.querySelector("#preloader");
+    preLoader.classList.add("preloader");
   }, 500);
-}
+};
 
 /* select======== */
 const getSelectTemplate = (classes, placeholder, content) => `
