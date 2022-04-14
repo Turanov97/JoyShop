@@ -1,3 +1,170 @@
+@media (min-width: 1600px) and (max-width: 2260px) {
+
+   /* links */
+   .link__item {
+      font-size: 21px;
+      margin-left: 90px;
+   }
+
+   .photo__bg {
+      width: 100%;
+   }
+
+   /* clients__item  */
+
+   .clients__item {
+      width: 28%;
+   }
+
+   .clients__title {
+      font-size: 60px;
+   }
+
+   .clients__text {
+      font-size: 35px;
+   }
+
+   /* .collapsible__header */
+   .accordion {
+      width: 45%;
+   }
+
+   .collapsible__header {
+      font-size: 35px;
+   }
+
+   .collapsible__header::after {
+      font-size: 90px;
+   }
+
+   /* .price__content */
+   .price__content {
+      width: 45%;
+   }
+
+   .price__btn {
+      font-size: 30px;
+   }
+
+   .price__subtitle {
+      font-size: 25px;
+   }
+
+   .price__text {
+      font-size: 25px;
+   }
+
+   /* popular__count  */
+
+   .popular__count {
+      font-size: 22px;
+   }
+
+   .popular__count span {
+      font-size: 22px;
+   }
+
+   .popular__content {
+      align-items: center;
+   }
+
+   /* cloth__text  */
+   .cloth__text {
+      font-size: 27px;
+   }
+
+   .cloth__title {
+      font-size: 50px;
+   }
+
+   /* reviews__text  */
+
+   .reviews__text {
+      font-size: 25px;
+   }
+
+   .reviews__name {
+      font-size: 25px;
+   }
+
+   /* property__box  */
+   .property__box {
+      font-size: 30px;
+   }
+
+   /* contact__form input  */
+
+   .contact__form input {
+      font-size: 30px;
+   }
+
+   .contact__form textarea {
+      font-size: 30px;
+   }
+
+   .all__btn {
+      font-size: 30px;
+   }
+
+   /* footer__text  */
+   .footer__text {
+      font-size: 22px;
+   }
+
+   .footer__item {
+      justify-content: space-around;
+   }
+
+   .footer__contact {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .footer__phone {
+      font-size: 35px;
+   }
+
+   .footer__mail {
+      text-align: end;
+      font-size: 22px;
+   }
+
+   .footer__end {
+      font-size: 20px;
+   }
+
+   /* .nav__inner.active */
+   .nav__inner.active {
+      top: 4.8%;
+   }
+
+   /* home page slide */
+
+   .intro_slide_three_text.two {
+      font-size: 30px;
+      width: 40%;
+   }
+
+   .intro_slide_three_btn {
+      margin-right: 200px;
+   }
+
+   .intro_slide_three_text {
+      font-size: 22px;
+   }
+
+   .intro_slide_three_title {
+      padding: 18px 178px;
+   }
+   .intro_slide_three_title.four {
+      padding: 18px 32px;
+  }
+  .intro_slide_three_btns.four {
+     left: 5%;
+  }
+}
+
 @media(max-width: 1441px) {
 
    /* links */
@@ -1949,6 +2116,7 @@
       display: flex;
       flex-direction: column-reverse !important;
    }
+
    .about__con__text.slide-3 {
       font-size: 22px;
    }

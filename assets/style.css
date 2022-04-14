@@ -497,7 +497,7 @@ select.select-wrap {
 }
 
 .intro_slide_img-3.slide-2-3 {
-   height: 102%;
+   height: auto;
    bottom: -2%;
    right: -2%;
    left: auto;
@@ -1623,7 +1623,7 @@ form {
 }
 
 .my__slide {
-   width: 335px;
+   width: 335px !important;
 }
 
 .popular__count {

@@ -222,7 +222,7 @@ new Swiper(".mySwiper1", {
 
 new Swiper(".mySwiper2", {
   // slidesPerView: 2.2,
-  spaceBetween: 20,
+  // spaceBetween: 20,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
