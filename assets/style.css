@@ -80,11 +80,13 @@ a:focus, a:hover {
    transition: opacity .2s linear;
 
 }
+
 .preloader {
    transition: all .2s linear;
    opacity: 0;
    visibility: hidden;
 }
+
 #loader {
    display: block;
    position: relative;
@@ -95,10 +97,11 @@ a:focus, a:hover {
    margin: -75px 0 0 -75px;
    border-radius: 50%;
    border: 3px solid transparent;
-   border-top-color: #9370DB;
+   border-top-color: #2E7E7C;
    -webkit-animation: spin 2s linear infinite;
    animation: spin 2s linear infinite;
 }
+
 #loader:before {
    content: "";
    position: absolute;
@@ -108,10 +111,11 @@ a:focus, a:hover {
    bottom: 5px;
    border-radius: 50%;
    border: 3px solid transparent;
-   border-top-color: #BA55D3;
+   border-top-color: #338986;
    -webkit-animation: spin 3s linear infinite;
    animation: spin 3s linear infinite;
 }
+
 #loader:after {
    content: "";
    position: absolute;
@@ -121,34 +125,39 @@ a:focus, a:hover {
    bottom: 15px;
    border-radius: 50%;
    border: 3px solid transparent;
-   border-top-color: #FF00FF;
+   border-top-color: #20B2AA;
    -webkit-animation: spin 1.5s linear infinite;
    animation: spin 1.5s linear infinite;
 }
+
 @-webkit-keyframes spin {
-   0%   {
-       -webkit-transform: rotate(0deg);
-       -ms-transform: rotate(0deg);
-       transform: rotate(0deg);
+   0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
    }
+
    100% {
-       -webkit-transform: rotate(360deg);
-       -ms-transform: rotate(360deg);
-       transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
    }
 }
+
 @keyframes spin {
-   0%   {
-       -webkit-transform: rotate(0deg);
-       -ms-transform: rotate(0deg);
-       transform: rotate(0deg);
+   0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
    }
+
    100% {
-       -webkit-transform: rotate(360deg);
-       -ms-transform: rotate(360deg);
-       transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
    }
 }
+
 /* loader end */
 
 header {
@@ -450,13 +459,16 @@ select.select-wrap {
    font-size: 15px;
    color: #898989;
 }
+
 .sort .custom-option:hover {
    color: #000;
    background: transparent;
 }
+
 .sort .custom-select.opened .custom-options {
    margin-top: 10px;
 }
+
 /* intro */
 .section__slider {
    background: linear-gradient(106.44deg, #155553 12.26%, #358C8A 88.92%);
