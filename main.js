@@ -181,6 +181,9 @@ items.forEach((texts) =>
   })
 );
 
+
+
+
 // let search = document.querySelector('.search__inner')
 // window.onclick = function(event) {
 //   if (event.target == modal) {

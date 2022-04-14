@@ -2561,6 +2561,9 @@ reviews */
    font-size: 25px;
    color: #2E7E7C;
 }
+/* .reset__filter {
+
+} */
 
 .overlay {
    opacity: 0;
@@ -2660,6 +2663,8 @@ select {
    line-height: 128.5%;
    color: #000000;
 }
+
+
 
 .checkbox__collapsible {
    border: 1px solid rgba(46, 126, 124, 0.25);
