@@ -352,3 +352,38 @@ $(document).ready(function () {
     return false;
   });
 });
+
+// Получить модальный
+const modal = document.getElementById("myModal");
+
+// Получить кнопку, которая открывает модальный
+const btn = document.getElementById("modalAction");
+
+// Получить элемент <span>, который закрывает модальный
+const span = document.getElementsByClassName("close")[0];
+
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function () {
+  modal.style.display = "block";
+  $("body").css("overflow", "hidden");
+};
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function () {
+  modal.style.display = "none";
+  $("body").css("overflow", "scroll");
+};
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    $("body").css("overflow", "scroll");
+  }
+};
+
+$(".close_action_modal").on("click", function () {
+  $(".overlay").removeClass("active");
+  $(".modal").css("display", "none");
+  $("body").css("overflow", "scroll");
+});
