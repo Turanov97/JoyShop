@@ -249,6 +249,14 @@
    .product__item {
       width: 80%;
    }
+
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+   .link__item {
+      font-size: 21px;
+      margin-left: 70px !important;
+   }
 }
 
 @media(max-width: 1441px) {
