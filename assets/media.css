@@ -1682,6 +1682,9 @@
 }
 
 
+@media (max-width: 456px) {}
+
+
 /* Portrait tablets and medium desktops */
 @media (min-width: 200px) and (max-width: 1259px) {
    .tabs__accordion {
@@ -1832,6 +1835,10 @@
       margin-top: 100px;
    }
 
+   .sort-select {
+      width: 100%;
+   }
+
    .filter__action {
       width: 90%;
       padding: 11px 0;
@@ -1845,8 +1852,8 @@
    }
 
    .sort .custom-select-trigger {
-      padding: 13px 50px 13px 23px;
-      font-size: 14px
+      padding: 13px 50px 13px 40px;
+      font-size: 10px
    }
 
    .popular__img_arrow {
@@ -1964,14 +1971,25 @@
    }
 
    .sort .custom-select-trigger {
-      padding: 10px 15px 10px 15px;
-      font-size: 12px;
+      padding: 10px 30px 10px 30px;
+      font-size: 8gitpx;
    }
 
    .filter__action {
+      width: 80%;
+      padding: 9px 0;
+      font-size: 10px;
+   }
+   .sort .custom-option {
+      font-size: 10px;
+   }
+}
+
+@media (max-width: 350px) {
+   .filter__action {
       width: 90%;
       padding: 9px 0;
-      font-size: 13px;
+      font-size: 10px;
    }
 }
 
