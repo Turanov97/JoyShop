@@ -2597,6 +2597,7 @@ reviews */
    left: 0;
    opacity: 1;
    visibility: visible;
+   overflow: scroll;
 }
 
 .filter__cloes {
@@ -2625,7 +2626,7 @@ reviews */
    width: 80%;
    padding: 18px 0;
 
-   margin: 70px auto 0;
+   margin: 30px 25px;
 
    background: #2E7E7C;
    border-radius: 36px;
@@ -2656,8 +2657,8 @@ reviews */
 
 .reset__filter.mobile {
    justify-content: end;
-   margin-top: 50px;
-   margin-right: 30px;
+   margin-top: 30px;
+   margin-right: 20px;
 
 
 }
