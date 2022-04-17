@@ -24,7 +24,6 @@ document.querySelectorAll(".select-wrap").forEach((wrap) => {
   const select = wrap.querySelector(".custom-select");
   const classes = select.getAttribute("class");
   const additional = wrap.dataset.additional || "";
-  console.log(additional);
 
   const options = select.querySelectorAll("option");
   let content = Array.from(options)
@@ -71,6 +70,8 @@ $(function () {
     $(".overlay").addClass("active");
   });
 
+  /* phone menu */
+
   $("#mobile__close").on("click", function () {
     $("#mobile").removeClass("active");
     $("#nav__toggle").removeClass("active");
@@ -90,12 +91,28 @@ $(function () {
     $(".search__inner").removeClass("active");
   });
 
-  $(".popular__item").on("click", function () {
+  /* popular btn action */
+
+  $(".popular__item").on("click", function (e) {
+    const [popularBtn] = $(this).find(".popular__add");
+    if (popularBtn === e.target) {
+      removeActiveClass("popular__add__click");
+      removeActiveClass("popular__add");
+      $(this).find(".popular__add__click").toggleClass("active");
+      $(this).find(".popular__add").toggleClass("active");
+    }
+    // else {
+    //   removeActiveClass("popular__add__click");
+    //   removeActiveClass("popular__add");
+    // }
+  });
+
+  $(".popular__item").on("mouseleave", function (e) {
     removeActiveClass("popular__add__click");
     removeActiveClass("popular__add");
-    $(this).find(".popular__add__click").toggleClass("active");
-    $(this).find(".popular__add").toggleClass("active");
   });
+
+  /* filter ==== menu */
 
   $("#filter__action").on("click", function () {
     $(".filter__menu").addClass("active");
@@ -136,30 +153,8 @@ $(function () {
     }
   });
 
-  /* clothe on click window */
-  // let btnCategories = $('#filter__action')
-  // let categories = $('.filter__menu')
-  // let overlay = $('.overlay')
-
-  // $(document).mouseup(function (e) {
-  //   if (
-  //     !btnCategories.is(e.target) &&
-  //     btnCategories.has(e.target).length === 0 &&
-  //     !categories.is(e.target) &&
-  //     categories.has(e.target).length === 0
-  //   ) {
-  //     categories.fadeOut();
-  //   }
-  // });
-
-  /*  */
-  // $("#nav__box").on("click", function () {
-  //   $(".nav__box__inner").toggleClass("active");
-  // });
-
   const removeActiveClass = (query) => {
     $(`.${query}.active`).each(function () {
-      // console.log($(this));
       setTimeout(() => {
         $(this).removeClass("active");
       }, 0);
@@ -176,6 +171,7 @@ $(function () {
   // $('.cloth__text').on('click', function() {
   //   $('.cloth__title').html('Текстиль для гостиниц и спа центров'); // либо .text()
   // });
+
   $("#two").on("click", function () {
     let two = $("#two").html();
     $("#two").html($("#one").html());
@@ -325,16 +321,6 @@ function triggercross(val) {
   x.style.display = "block";
 }
 
-// function close1() {
-//   // document.getElementById("demo").innerHTML = "You wrote: " + val;
-//   var x = document.getElementById("closeid");
-//   if (x.style.display == "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-// }
-
 /* Tabs */
 
 $(document).ready(function () {
@@ -363,22 +349,45 @@ const btn = document.getElementById("modalAction");
 const span = document.getElementsByClassName("close")[0];
 
 // Когда пользователь нажимает на кнопку, откройте модальный
-btn.onclick = function () {
-  modal.style.display = "block";
-  $("body").css("overflow", "hidden");
+btn.onclick = function (e) {
+  const [popularBtn] = $(this).find(".popular__add");
+  const [popularClick] = $(this).find(".popular__add__click");
+  const [popularBtns] = $(this).find(".popular__add__btns");
+  const [popularRemove] = $(this).find(".popular__add__btn");
+  const [popularAdd] = $(this).find(".popular__add__btn--add");
+  const [popularShop] = $(this).find(".popular__img_shop");
+  const [popularImg] = $(this).find(".popular__add__img");
+  const [popularIcon] = $(this).find(".popular__img_arrow");
+  const [popularText] = $(this).find(".popular__add__text");
+  const actions = [
+    popularBtn,
+    popularRemove,
+    popularClick,
+    popularImg,
+    popularIcon,
+    popularText,
+    popularAdd,
+    popularShop,
+    popularBtns,
+  ];
+
+  if (!actions.includes(e.target)) {
+    modal.style.display = "block";
+    $("body").css("overflow", "hidden");
+  }
 };
 
 // Когда пользователь нажимает на <span> (x), закройте модальное окно
 span.onclick = function () {
   modal.style.display = "none";
-  $("body").css("overflow", "scroll");
+  document.body.style.overflow = "scroll";
 };
 
 // Когда пользователь щелкает в любом месте за пределами модального, закройте его
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
-    $("body").css("overflow", "scroll");
+    document.body.style.overflow = "scroll";
   }
 };
 
@@ -387,3 +396,5 @@ $(".close_action_modal").on("click", function () {
   $(".modal").css("display", "none");
   $("body").css("overflow", "scroll");
 });
+
+/* search focus */

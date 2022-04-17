@@ -50,7 +50,7 @@ a:focus, a:hover {
 
 /* scroll bar
 ================ */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
    width: 12px;
 }
 
@@ -63,7 +63,7 @@ a:focus, a:hover {
    border-radius: 8px;
    border: 1px solid #9c9c9c;
 }
- */
+
 
 /* header===== */
 
@@ -787,9 +787,11 @@ select.select-wrap {
    /* z-index: 11; */
    top: 0%;
    left: 0;
-   transition: all .3s ease-in;
+   transition: all .2s ease-in;
    visibility: hidden;
    opacity: 0;
+   transform: translate(0, -100%);
+
 }
 
 .nav__content {
@@ -835,8 +837,9 @@ select.select-wrap {
 
 .nav__inner.active {
    /* transform: translateY(0%); */
-   top: 9.8%;
+   top: 0%;
    opacity: 1;
+   transform: translate(0%, 0);
    z-index: 222;
    visibility: visible;
    background-color: #fff;
@@ -992,12 +995,22 @@ select.select-wrap {
    background: #fff;
    position: fixed;
    z-index: 3;
-   left: -50%;
+   left: -0;
    top: 0;
+   transform: translate(-100%, 0);
    visibility: hidden;
    transition: .3s ease-in;
    opacity: 0;
    display: none;
+}
+
+.mobile__menu.active {
+   transform: translate(0%, 0);
+   opacity: 1;
+   left: 0;
+   visibility: visible;
+   z-index: 222;
+   overflow: scroll;
 }
 
 .mobile__contents {
@@ -1022,13 +1035,7 @@ select.select-wrap {
    transform: translate(-50%, -50%);
 }
 
-.mobile__menu.active {
-   opacity: 1;
-   left: 0;
-   visibility: visible;
-   z-index: 222;
-   overflow: scroll;
-}
+
 
 .mobile__link {
    display: block;
@@ -3584,7 +3591,7 @@ select {
 
 .blog__img img {
    width: 100%;
-   height: 251px;
+   height: 331px;
    object-fit: cover;
    margin-bottom: 13px;
 }
@@ -3768,6 +3775,7 @@ select {
 
 
 .close_action_modal {
+   cursor: pointer;
    position: absolute;
    top: 15px;
    right: 15px;
