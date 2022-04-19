@@ -398,7 +398,7 @@
    /* about */
    .about__title {
       margin-bottom: 45px;
-      font-size: 35px;
+      font-size: 45px;
    }
 
    /* accordion */
@@ -700,6 +700,9 @@
    .link__item {
       font-size: 18px;
    }
+   .popular__title {
+      width: 100%;
+   }
 
    /* intro */
 
@@ -809,7 +812,6 @@
    }
 
    .price__title {
-      font-size: 35px;
       line-height: 50px;
       width: 100%;
    }
@@ -844,9 +846,7 @@
       justify-content: space-between;
    }
 
-   .popular__title {
-      font-size: 40px;
-   }
+
 
    .popular {
       margin-top: 80px;
@@ -1002,6 +1002,8 @@
 
    .contact__location__title {
       width: 100%;
+      font-size: 35px;
+      margin-bottom: 15px;
    }
 
    .contact__maps {
@@ -1074,6 +1076,16 @@
 
    .product__btns {
       width: 40%;
+   }
+   .popular__title {
+      font-size: 40px;
+   }
+
+   .price__title {
+      font-size: 35px;
+   }
+   .about__title {
+      font-size: 35px;
    }
 }
 
@@ -1618,6 +1630,7 @@
       right: -10%;
       width: 48%;
    }
+
 }
 
 /* Landscape phones and portrait tablets */

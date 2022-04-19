@@ -2657,6 +2657,8 @@ reviews */
    color: #000000;
    display: flex;
    align-items: center;
+
+   margin-top: 30px;
 }
 
 .reset__filter img {
@@ -2774,6 +2776,10 @@ select {
 
 .checkbox__collapsible {
    border: 1px solid rgba(46, 126, 124, 0.25);
+}
+
+.checkbox-filter {
+   padding: 15px 25px !important;
 }
 
 /*  */
