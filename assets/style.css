@@ -1177,6 +1177,7 @@ form {
 }
 
 .search__send__btn {
+   text-align: center;
    padding: 15px 28px;
    font-family: 'Inter';
    font-style: italic;
@@ -1394,14 +1395,18 @@ form {
    position: relative;
 }
 
-.about__content {
+.about_one {
    position: relative;
+}
+
+.about__img {
+   top: 100px;
+   position: absolute !important;
 }
 
 .about__img img {
    position: absolute;
    left: -20%;
-   top: -0%;
 }
 
 .about__title {
@@ -1745,7 +1750,7 @@ form {
    font-family: 'Inter';
    font-style: italic;
    font-weight: 400;
-   font-size: 20px;
+   font-size: 18px;
    line-height: 128.5%;
    text-transform: uppercase;
    color: #000000;
@@ -1843,10 +1848,11 @@ form {
 }
 
 .popular__add__text {
+   text-align: center;
    font-family: 'Inter';
    font-style: italic;
    font-weight: 400;
-   font-size: 18px;
+   font-size: 16px;
    line-height: 128.5%;
    text-transform: uppercase;
    color: #FFFFFF;
@@ -2772,7 +2778,9 @@ select {
    color: #000000;
 }
 
-
+.checkbox__collapsible:not(:last-child) {
+   border: 1px solid rgba(46, 126, 124, 0.25) !important;
+}
 
 .checkbox__collapsible {
    border: 1px solid rgba(46, 126, 124, 0.25);
@@ -3184,10 +3192,16 @@ select {
 }
 
 .product__btn {
+   width: 30%;
    display: inline-block;
-   padding: 8px 15px;
+   padding: 0px 15px;
+   height: 50px;
    transition: .2s linear;
    color: #2E7E7C;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items:  center;
 }
 
 .product__content {
@@ -3230,7 +3244,9 @@ select {
 .product__btns {
    display: flex;
    justify-content: space-between;
-   width: 86%;
+   align-items: center;
+   width: 80%;
+   height: 50px;
    border-radius: 80px;
    border: 1px solid #20B2AA;
 }
@@ -3464,7 +3480,7 @@ select {
    margin-top: 80px;
 }
 
-/* #myBtn {
+#myBtn {
    display: none;
    position: fixed;
 
@@ -3477,10 +3493,10 @@ select {
    background-color: transparent;
    color: #2E7E7C;
    cursor: pointer;
-   padding: 15px 22px;
+   padding: 6px 13px;
    border-radius: 50%;
    transition: .2s ease-in;
-} */
+}
 
 #myBtn:hover {
    background-color: #2E7E7C;
@@ -3825,7 +3841,7 @@ select {
    font-family: 'Inter';
    font-style: italic;
    font-weight: 400;
-   font-size: 20px;
+   font-size: 18px;
    line-height: 128.5%;
    text-transform: uppercase;
    color: #2E7E7C;

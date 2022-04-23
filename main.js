@@ -1,6 +1,5 @@
 /* preloder */
-
-window.onload = function () {
+const loadPreloader = () => {
   window.setTimeout(function () {
     const preLoader = document.querySelector("#preloader");
     preLoader.classList.add("preloader");
@@ -68,6 +67,7 @@ $(function () {
     $("#nav__inner").toggleClass("active");
     $("#mobile").toggleClass("active");
     $(".overlay").addClass("active");
+    $("body").css("overflow", "hidden");
   });
 
   /* phone menu */
@@ -76,19 +76,23 @@ $(function () {
     $("#mobile").removeClass("active");
     $("#nav__toggle").removeClass("active");
     $(".overlay").removeClass("active");
+    $("body").css("overflow", "scroll");
   });
 
   $(".nav__inner-cloes").on("click", function () {
     $("#nav__inner").removeClass("active");
     $(".overlay").removeClass("active");
     $("#nav__toggle").removeClass("active");
+    $("body").css("overflow", "scroll");
   });
   $(".search__icon").on("click", function () {
     $(".search__inner").toggleClass("active");
+    $("body").css("overflow", "scroll");
   });
 
   $(".fa-times").on("click", function () {
     $(".search__inner").removeClass("active");
+    $("body").css("overflow", "scroll");
   });
 
   /* popular btn action */
@@ -141,6 +145,7 @@ $(function () {
       $("#mobile").removeClass("active");
       $(".overlay").removeClass("active");
       $(".filter__menu").removeClass("active");
+      $("body").css("overflow", "scroll");
     }
   });
 
@@ -150,6 +155,7 @@ $(function () {
       $("#nav__inner").removeClass("active");
       $(".overlay").removeClass("active");
       $(".search__inner").removeClass("active");
+      $("body").css("overflow", "scroll");
     }
   });
 
@@ -340,61 +346,82 @@ $(document).ready(function () {
 });
 
 // Получить модальный
-const modal = document.getElementById("myModal");
+const openModalWindow = () => {
+  const modal = document.getElementById("myModal");
 
-// Получить кнопку, которая открывает модальный
-const btn = document.getElementById("modalAction");
+  // Получить кнопку, которая открывает модальный
+  const btn = document.getElementById("modalAction");
 
-// Получить элемент <span>, который закрывает модальный
-const span = document.getElementsByClassName("close")[0];
+  // Получить элемент <span>, который закрывает модальный
+  const span = document.getElementsByClassName("close")[0];
 
-// Когда пользователь нажимает на кнопку, откройте модальный
-btn.onclick = function (e) {
-  const [popularBtn] = $(this).find(".popular__add");
-  const [popularClick] = $(this).find(".popular__add__click");
-  const [popularBtns] = $(this).find(".popular__add__btns");
-  const [popularRemove] = $(this).find(".popular__add__btn");
-  const [popularAdd] = $(this).find(".popular__add__btn--add");
-  const [popularShop] = $(this).find(".popular__img_shop");
-  const [popularImg] = $(this).find(".popular__add__img");
-  const [popularIcon] = $(this).find(".popular__img_arrow");
-  const [popularText] = $(this).find(".popular__add__text");
-  const actions = [
-    popularBtn,
-    popularRemove,
-    popularClick,
-    popularImg,
-    popularIcon,
-    popularText,
-    popularAdd,
-    popularShop,
-    popularBtns,
-  ];
+  if (btn) {
+    // Когда пользователь нажимает на кнопку, откройте модальный
+    btn.onclick = function (e) {
+      const [popularBtn] = $(this).find(".popular__add");
+      const [popularClick] = $(this).find(".popular__add__click");
+      const [popularBtns] = $(this).find(".popular__add__btns");
+      const [popularRemove] = $(this).find(".popular__add__btn");
+      const [popularAdd] = $(this).find(".popular__add__btn--add");
+      const [popularShop] = $(this).find(".popular__img_shop");
+      const [popularImg] = $(this).find(".popular__add__img");
+      const [popularIcon] = $(this).find(".popular__img_arrow");
+      const [popularText] = $(this).find(".popular__add__text");
+      const actions = [
+        popularBtn,
+        popularRemove,
+        popularClick,
+        popularImg,
+        popularIcon,
+        popularText,
+        popularAdd,
+        popularShop,
+        popularBtns,
+      ];
 
-  if (!actions.includes(e.target)) {
-    modal.style.display = "block";
-    $("body").css("overflow", "hidden");
+      if (!actions.includes(e.target)) {
+        modal.style.display = "block";
+        $("body").css("overflow", "hidden");
+      }
+    };
   }
-};
 
-// Когда пользователь нажимает на <span> (x), закройте модальное окно
-span.onclick = function () {
-  modal.style.display = "none";
-  document.body.style.overflow = "scroll";
-};
-
-// Когда пользователь щелкает в любом месте за пределами модального, закройте его
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    document.body.style.overflow = "scroll";
+  // Когда пользователь нажимает на <span> (x), закройте модальное окно
+  if (span != null) {
+    span.onclick = function () {
+      modal.style.display = "none";
+      document.body.style.overflow = "scroll";
+    };
   }
+
+  // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "scroll";
+    }
+  };
+
+  $(".close_action_modal").on("click", function () {
+    $(".overlay").removeClass("active");
+    $(".modal").css("display", "none");
+    $("body").css("overflow", "scroll");
+  });
 };
-
-$(".close_action_modal").on("click", function () {
-  $(".overlay").removeClass("active");
-  $(".modal").css("display", "none");
-  $("body").css("overflow", "scroll");
-});
-
 /* search focus */
+
+function focusInputField() {
+  const searchIcon = document.querySelector(".search__icon");
+  if (searchIcon) {
+    searchIcon.addEventListener("click", () =>
+      setTimeout(() => document.getElementById("search").focus(), 500)
+    );
+  }
+}
+
+// After load window render all functions
+window.addEventListener("load", () => {
+  loadPreloader();
+  openModalWindow();
+  focusInputField();
+});
