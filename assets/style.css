@@ -3230,7 +3230,6 @@ select {
 
 .product__blog__title {
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 25px;
    line-height: 128.5%;
@@ -3263,7 +3262,6 @@ select {
 
 .product__blog__text {
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 20px;
    line-height: 128.5%;
@@ -3273,7 +3271,6 @@ select {
 
 .product__blog__text span {
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 20px;
    line-height: 128.5%;
@@ -3308,7 +3305,6 @@ select {
 
 .product__price__title {
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 20px;
    line-height: 128.5%;
@@ -3318,7 +3314,6 @@ select {
 
 .product__price__count {
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 25px;
    line-height: 128.5%;
@@ -3330,7 +3325,6 @@ select {
    display: flex;
    align-items: center;
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 20px;
    line-height: 128.5%;
@@ -3340,7 +3334,6 @@ select {
 .product__price__amor {
    margin-left: 26px;
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 20px;
    line-height: 128.5%;
@@ -3350,7 +3343,6 @@ select {
 
 .products__count {
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 20px;
    line-height: 128.5%;
@@ -3406,7 +3398,6 @@ select {
 
 .total__title {
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 20px;
    line-height: 128.5%;
@@ -3415,7 +3406,6 @@ select {
 
 .total__text {
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 20px;
    line-height: 128.5%;
@@ -3425,7 +3415,6 @@ select {
 
 .total__subtext {
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 25px;
    line-height: 128.5%;
@@ -3442,7 +3431,6 @@ select {
    display: inline-block;
    padding: 18.5px 10.5px;
    font-family: 'Inter';
-   font-style: italic;
    font-weight: 400;
    font-size: 18px;
    line-height: 128.5%;
