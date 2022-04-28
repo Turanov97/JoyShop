@@ -1624,6 +1624,10 @@
    .popular__subtitle {
       font-size: 12px;
    }
+   /* .collapsible__img */
+   .collapsible__img {
+      display: none;
+   }
 }
 
 
