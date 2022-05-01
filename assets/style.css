@@ -3791,6 +3791,7 @@ select {
 
 .modal__inner {
    display: flex;
+   justify-content: space-between;
 }
 
 .modal__item {

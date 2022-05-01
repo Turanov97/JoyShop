@@ -2053,10 +2053,10 @@
       height: 210px;
    }
 
-   .popular__count {
+   /* .popular__count {
       display: flex;
       flex-direction: column;
-   }
+   } */
 
    .popular__add {
       font-size: 10px;
@@ -2541,6 +2541,7 @@
 
    .modal__text {
       font-size: 14px;
+      margin-top: 7px;
    }
 
    .modal_sub_title {
