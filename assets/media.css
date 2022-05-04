@@ -1768,6 +1768,9 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+   .about__con__text.slide-3 {
+      width: 60%;
+   }
    .about__con__group-top {
       display: none;
    }
@@ -2297,7 +2300,10 @@
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1215px) {
+   .about__con__group.slide-3 {
+      width: 50%;
+   }
    .intro_slide_img-1.slide-2-1 {
       width: 72%;
    }
