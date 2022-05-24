@@ -3250,10 +3250,13 @@ select {
 
 .product__blogs {
    display: flex;
+   width: 100%;
+   justify-content: space-between;
 }
 
 .product__blog {
-   margin-left: 150px;
+   width: 35%;
+   /* margin-left: 150px; */
 }
 
 .product__blog:first-child {
